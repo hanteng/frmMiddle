@@ -1,0 +1,16 @@
+---
+title: 國師專家選列
+listing: 
+  contents: "." # 這表示列出當前目錄下的所有文章
+  sort: "title"  
+  type: grid # 或 default, table, grid 等
+  id: experts-list
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [image, title, description, categories]
+  page-size: 10
+page-layout: full
+---
+
+收錄專家**簡介**、**專業領域**以及**最新觀點**，為 _智能國師_ 提供數據及範例。

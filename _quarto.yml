@@ -1,0 +1,72 @@
+encoding: "UTF-8"
+lang: zh-hant
+# --- Override translations directly ---
+language:
+  zh-hant:
+    abstract: "摘要"
+
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!archive/"  
+    - "!images_creation/"  
+
+website:
+  site-url: https://mid.frmai.life # you must change this appropriately for RSS feeds to work properly
+  title: "智能國師《攏中道》"
+  description: "⁓ Holding Middle Grounds: A Savant Advisor for Seeking Life Opportunities in Turbulent Times。在 AI 完成愛因斯坦測試之前，打造能應對台海問題及中美賽局的「特異能力者」（Savant）智能國師，《攏中道：變局中求活路的智能國師》的網站，記錄整理編排相關方法與資源，並分享個人設計思考與實作規格。"
+  navbar:
+    right:
+      - href: about.qmd
+        text: "關於"
+      - icon: github
+        href: https://github.com/hanteng/frmMiddle
+      - icon: twitter
+        href: https://twitter.com/hanteng
+  # 1. PRIMARY NAVIGATION (Left Sidebar/TOC)
+  sidebar:
+    # Position: Defines the left-side navigation
+    style: "docked"
+    search: true
+    collapse-level: 4 
+    contents:
+      - text: "🛖首頁"
+        href: index.qmd
+      - text: "🤓國師專家"
+        href: experts/index.qmd
+      - section: "📜網誌文章"
+        contents:
+        #- text: "時事評論"
+        #  href: news-comment.qmd
+        #- text: "脈絡比較"
+        #  href: contexts-compare.qmd
+        #- text: "理論構建"
+        #  href: frameworks-construct.qmd
+        - text: "文章（列表所有）"
+          href: posts/index.qmd  # 確保 posts/ 資料夾中有 index.qmd 或 listing 頁面
+        #- text: "頁面（列表所有）"
+        #  href: pages/index.qmd  # 確保 pages/
+
+      #- text: "服務介紹"
+      #  href: services.qmd  # 直接指向 .qmd 文件
+      - text: "🌌關於智能國師《攏中道》"
+        href: about.qmd
+
+format:
+  html:
+    # 這是正確的位置！TOC 屬性必須在 format:html: Show up to H3 headers in the Right TOC
+    toc: true
+    toc-collapse: false  
+    toc-depth: 4
+    toc-title: "〜📖本頁章節目錄📑〜"
+    #number-sections: true # enable right-hand TOC
+    #number-depth: 4
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+
+
+

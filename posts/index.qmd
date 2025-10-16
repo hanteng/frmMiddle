@@ -1,0 +1,13 @@
+---
+listing:
+  contents: "." # 這表示列出當前目錄下的所有文章
+  sort: "date desc"
+  type: default # 或 default, table, grid 等
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+---
+
+# 文章總覽
+<!-- title: "文章總覽" # 或 "網誌列表", "所有文章" 等中文標題-->

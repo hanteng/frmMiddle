@@ -1,0 +1,242 @@
+---
+title: 中道難攏：新詩《大聖歸來》
+author: 廖漢騰 Han-Teng Liao
+date: 2025-10-16
+categories:
+  - 新詩
+  - 問題意識
+image: image.jpg
+---
+
+## 中道難攏詩句源起
+
+「**中道難攏**」指 ❝the center cannot hold❞ 詩句翻譯，來自諾貝爾文學奬得主葉慈（W.B.Yeats）《**二度降臨**》這道詩。
+
+我初心是要打造【智能國師】產品原型的引子，尋求啟發，並暫定一個「定海神針」，就怕找不到方向。
+
+若對打造【智能國師】產品原型有利，我會修改新詩的，若讀者有建議，請聯繫我。
+
+::: {.callout-warning collapse="true"}
+
+##### 聲明與警語
+
+這首新詩主要是為了「**智能國師**」這個產品原型發想的。請讀者**斟酌**服用，**母湯（mā-thang，請勿）** 想太多腦補過頭。
+
+讀者對詩的各種腦補和延伸解讀，我恕不負責喔。當然，歡迎你自由分享自己的想法，**但不要說是我的意思**。
+
+這首詩有著作權，不過它目前只是一種**摸索式的表達**，目的是釐清【智能國師】這個產品原型的**界線和可能性**。表達的著作權當然是我的，但背後的想法很亂，還沒定案。
+
+（這中文翻譯和較為人知的楊牧，楊渡，或凌風的譯本都不一樣。）原因是我想要文化翻譯，從西方神話宗教脈絡，替換成東方神話宗教脈絡。這或許有冒犯性，可能還不只一處。
+
+**歡迎用建設性的工具來幫忙理清方向，謝絕惡意解讀。**
+
+##### Disclaimer
+
+Primarily serving as a musing text for the **product prototype** of _Statecraft Savant_. Readers are advised to proceed with caution and **avoid excessive speculation**. 
+
+I cannot be held responsible for your over-interpretation. You are, of course, free to share your thoughts and speculations, but please do not attribute them as my own intentions.
+
+While this poem is **copyrighted**, it merely represents an exploratory expression of what the _Statecraft Savant_ prototype **should and should not** do. While the copyright of such expressions belongs to me, but the underlying ideas are highly disorganized and remain ungrounded. 
+
+**Creative methods and tools for clarifying directions are welcome; malicious interpretations are not.**
+
+:::
+
+仿改 葉慈（W.B.Yeats）的詩《**二度降臨**》([The Second Coming](https://en.wikipedia.org/wiki/The_Second_Coming_(poem)))，這首詩《大聖歸來》，主要是用來界定【智能國師】的基本問題意識（中道難攏），設定了些許邊界，就防走火入魔，但找解決方案時，也就是「中道如何攏得好（省多快）？」，怕沒了創造性生產力。
+
+## ☠新詩《大聖歸來》☠
+
+<!-- **歷史與文明的復仇** -->
+
+<!-- **第一節：中道難攏，善惡顛倒** -->
+🌬🪽🦅
+
+一圈又一圈，左支右絀
+
+展翅的鵬鳥[^鵬鳥]，在萬里高空裡
+
+轉著，越飛越遠，
+
+牠馭的風漩衝騰，天道再也聽不到。
+
+**萬物散潰，中道難攏。**
+
+無章法的亂子，就醬竄訪世間，
+
+如一股血紅濁水，淹四方天下儀禮，
+
+連最起碼的人倫底線，也**沈淪**不見蹤跡。
+
+***
+
+<!-- **第二節：襲耳致聾，善惡顛倒** -->
+
+🙊🙉🙈
+
+最優秀的君子與公知，竟毫無定見，
+
+**信念與勇氣皆已耗盡。**
+
+反倒是媚俗的煽情者，個個充滿狂熱激情，
+
+喊聲襲耳致聾，蓋過一切理性。
+
+必有天機復歸，就醬來到**跟前**；
+
+必是大聖歸來，就醬徑回**東土**。
+
+🐒👑👹
+
+<!-- **第三節：大聖歸來，饕餮拉攏** -->
+
+:::: {layout-ncol=2}
+
+::: {#first-column}
+
+大聖歸來！名號方念，真言聲未絕，
+
+<br/>一個龐大的身影，彷彿
+
+看到，滾滾黃土間；長著
+
+**饕餮的身子，卻有人的臉**；像
+
+毒日頭，透露狠毒氣的
+
+<br/>一對空空的眼睛，感受
+
+不到，一絲絲仁義；拉攏著
+
+:::
+
+::: {#second-column} 
+
+![弘法大師修法図，展示饕餮意象](image.jpg){ #fig-Taotie fig-cap="弘法大師修法図，作者借用來展示本詩饕餮意象" fig-alt="弘法大師修法図，作者借用來展示本詩饕餮意象" width="88%"}
+
+來源：[西新井大師](https://www.nishiaraidaishi.or.jp/info/treasure12.html)
+:::
+
+::::
+
+<!-- **第四節：壓壓籠罩，現代夢魘** -->
+
+𓅐🧌𓅐
+
+**忿忿的群影，但見食腐鳥，**
+
+**壓壓的黑影，才迴旋籠罩：**
+
+那五千年的大智之眠，竟被
+
+**現代搖籃**晃醒成**夢魘**，到底
+
+那是什麼猛獸橫生？
+
+它的時代終於到來，
+
+拖著沉重的腿，朝
+
+萬民的發源地
+
+走去，走向新生？
+
+***
+
+<!-- **第五節：終問與無間　加戲** -->
+
+☠👿☠
+
+難道，
+
+這無盡甲子的文明輪迴，
+
+真又要**重續無間業緣**？
+
+**世襲饕餮，壟斷天下。**
+
+**萬物散潰，中道難攏。**
+
+***
+
+## 🏴‍☠️跋：歷史的包袱🏴‍☠️
+<!-- **跋：歷史的包袱（個體的選擇）** -->
+
+🏴‍☠️🐠🐉🏴‍☠️
+
+「**夢魘半醒！心猿掙渡，**」
+
+<!-- **仿第一節：因緣，生路** -->
+
+一進又一退，左顧右盼
+
+潛游的鯤鮞，在深淵萬丈裡
+
+爭扎，越游越遠，
+
+困牠的漩渦因緣，活路再也擋不住。
+
+**萬物散潰，中道難攏。**
+
+🌊🌀🌊
+
+有南洋東洋路子，闖四海惡水迴盪自湧，
+
+如北冰西洋衝騰，湧八方活水全景希望，
+
+連最素昧的互助之情，也被苦難逼得復甦。
+
+***
+
+<details>
+
+<summary>👉 就問你，在這亂世，如何選擇？ </summary>
+🐟🫧🐠
+
+你可以相忘於江湖，走那**大道左衽**，不為人情所累，得內心自由平靜。
+
+你也可以相濡以沫，學那**人情右衽**，自願承受重擔，守微茫值得情義。
+
+在禮樂崩壞的文明廢墟上，真正**復仇**，
+
+不是重拾舊禮，更不是强逼民女。
+
+而是自願穿上這左衽右衽，只為忠於自己的**心中道**。
+
+</details>
+
+**萬物散潰，中道難攏。**
+
+壓饕餮壟斷，魘襲聾龍[^聾龍]活。
+
+<!--
+![西遊記人物圖：大鵬金翅鳥與其他妖怪](monkey_bird.jpg){#fig-xiyouji fig-alt="西遊記中的大鵬金翅鳥與其他妖怪，背景有園林和人物。第75回 心猿钻透阴阳窍 魔王还归大道真。" width="60%"}-->
+
+![大海浪下的悟空](Sun_Wukong_Great_Wave.png){#fig-Wukong-Waves fig-alt="大海浪下的悟空" width="88%"}
+
+## 新詩註解 
+
+[^鵬鳥]:
+    古典小說《**西遊記**》最著名的鵬鳥，金翅大鵬鳥（或稱大鵬金翅鵰），能力超越孫悟空的有翅膀妖怪。根據如來佛祖的說法，有其創世譜系關係。
+[^聾龍]:
+    在民間傳說和部分訓詁學中，為了與**十二生肖**或**「聾」**這個字進行解釋，衍生出了「龍無耳」的說法。
+
+    例如「**十二缺**」說：在一些民間說法中，十二生肖各有「一缺」，其中就有「龍無耳」。
+
+:::: {layout-ncol=2}
+
+::: {#first-column}
+![古典小說《西遊記》最著名的鵬鳥，金翅大鵬鳥](Great-Peng-dapeng-jinchi-mingwang.png){ #fig-Great-Peng-Vishnu-Garuda-Vahan fig-cap="古典小說《西遊記》最著名的鵬鳥，金翅大鵬鳥" fig-alt="古典小說《西遊記》最著名的鵬鳥，金翅大鵬鳥" width="88%"}
+
+:::
+
+::: {#second-column} 
+
+![**迦樓羅**，印度神話主神毗濕奴的坐騎"](Great-Peng-Vishnu-Garuda-Vahan.png){ #fig-Great-Peng-Vishnu-Garuda-Vahan fig-cap="漢譯**大鵬金翅鳥**或**金翅鳥**，印度神話主神毗濕奴的坐騎" fig-alt="漢譯**大鵬金翅鳥**或**金翅鳥**，印度神話主神毗濕奴的坐騎" width="88%"}
+
+**迦樓羅**（[梵語](https://zh.wikipedia.org/wiki/%E6%A2%B5%E8%AA%9E "梵語")：गरुड，羅馬化：Garuḍa；[巴利語](https://zh.wikipedia.org/wiki/%E5%B7%B4%E5%88%A9%E8%AA%9E "巴利語")：Garuḷa），又音譯作**揭路荼**，漢譯**大鵬金翅鳥**或**金翅鳥**，[印度神話](https://zh.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D "印度神話")主神[毗濕奴](https://zh.wikipedia.org/wiki/%E6%AF%97%E6%B9%BF%E5%A5%B4 "毗濕奴")的坐騎。
+
+
+來源：[The Ganesh Shivaswamy Foundation](https://www.googblogs.com/get-to-know-indias-most-iconic-artist-explore-indias-landmarks-and-more-on-google-arts-culture/)
+:::
+
+::::

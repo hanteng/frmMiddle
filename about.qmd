@@ -1,0 +1,41 @@
+---
+title: 🌌關於智能國師《攏中道》
+image: devil.svg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+智能國師《攏中道》是一項高度實驗性項目。目標是：
+
+* 結合**大語言模型**（LLM）與 **中等權力** （middle powers），
+* 產出各立場及角色智能體對話博奕的產品說明及原型。
+* **高度實驗性**，也就是隨時可能會更改，尋求的是啟發。
+
+在 **框架** 及 **操作型** 定義會要求一致性，以求架構一套方法及定義。
+
+***
+
+由於議題特殊性及敏感性，會包括許多冒犯性內容。
+
+因為「**[中道難攏](posts/poem-center-cannot-hold/index.qmd)**」，本站期待能用批判理性（critical rationality）方式應對。
+
+**包容且比較**觀點的**有用性**及**有效性**，並讓各路人馬可以習得方法，自己作主選取運用。
+
+***
+
+換句話說，這裡分享的內容，主要是分享並吸收如何釣魚（如何打造智能國師？），至於什麼魚好，要養什麼魚，要吃還是觀賞（誰稱得上國師？國家需要什麼建議？等等），並不是本站的核心。
+
+不會單吹或單黑特定說法，而是提供具體脈絡及可查證來源。
+
+<!-- book sale plug -->
+

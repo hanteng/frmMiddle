@@ -1,0 +1,32 @@
+# .github/workflows/publish.yml
+
+name: Quarto Publish
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to the main branch
+  pull_request:
+    branches:
+      - main  # Optional: Run on pull requests for preview/testing
+  workflow_dispatch: {} # Allows manual triggering from the GitHub Actions tab
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push the rendered site back to the gh-pages branch
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for Quarto publishing
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages # Specify the branch to deploy the rendered files to
