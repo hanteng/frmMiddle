@@ -29,4 +29,6 @@ jobs:
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          target: gh-pages # Specify the branch to deploy the rendered files to
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
