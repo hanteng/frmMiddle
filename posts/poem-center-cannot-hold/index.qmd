@@ -231,7 +231,7 @@ While this poem is **copyrighted**, it merely represents an exploratory expressi
 
 ::: {#second-column} 
 
-![**迦樓羅**，印度神話主神毗濕奴的坐騎"](Great-Peng-Vishnu-Garuda-Vahan.png){ #fig-Great-Peng-Vishnu-Garuda-Vahan fig-cap="漢譯**大鵬金翅鳥**或**金翅鳥**，印度神話主神毗濕奴的坐騎" fig-alt="漢譯**大鵬金翅鳥**或**金翅鳥**，印度神話主神毗濕奴的坐騎" width="88%"}
+![**迦樓羅**，印度神話主神毗濕奴的坐騎](Great-Peng-Vishnu-Garuda-Vahan.png){ #fig-Great-Peng-Vishnu-Garuda-Vahan fig-cap="漢譯**大鵬金翅鳥**或**金翅鳥**，印度神話主神毗濕奴的坐騎" fig-alt="漢譯**大鵬金翅鳥**或**金翅鳥**，印度神話主神毗濕奴的坐騎" width="88%"}
 
 **迦樓羅**（[梵語](https://zh.wikipedia.org/wiki/%E6%A2%B5%E8%AA%9E "梵語")：गरुड，羅馬化：Garuḍa；[巴利語](https://zh.wikipedia.org/wiki/%E5%B7%B4%E5%88%A9%E8%AA%9E "巴利語")：Garuḷa），又音譯作**揭路荼**，漢譯**大鵬金翅鳥**或**金翅鳥**，[印度神話](https://zh.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6%E7%A5%9E%E8%AF%9D "印度神話")主神[毗濕奴](https://zh.wikipedia.org/wiki/%E6%AF%97%E6%B9%BF%E5%A5%B4 "毗濕奴")的坐騎。
 

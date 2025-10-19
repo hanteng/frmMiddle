@@ -17,11 +17,30 @@ website:
   site-url: https://mid.frmai.life # you must change this appropriately for RSS feeds to work properly
   title: "智能國師《攏中道》"
   description: "⁓ Holding Middle Grounds: A Savant Advisor for Seeking Life Opportunities in Turbulent Times。在 AI 完成愛因斯坦測試之前，打造能應對台海問題及中美賽局的「特異能力者」（Savant）智能國師，《攏中道：變局中求活路的智能國師》的網站，記錄整理編排相關方法與資源，並分享個人設計思考與實作規格。"
+  # ---------------------------------------------
+  # 頂部導航欄 (Navbar)
+  # ---------------------------------------------
   navbar:
     title: "地緣智能<br/>新框架"
+    left:
+      # 1. 實力定位 (MIDDLEP)
+      - text: "1️⃣🔑定位框濟"
+        file: middlep/index.qmd
+      # 2. 攏中之謀 (MOU)
+      - text: "2️⃣♞謀略縱横"
+        file: mou/index.qmd
+      # 3. 攏中之智 (AI)
+      - text: "3️⃣🦾智能鏈網"
+        file: ai/index.qmd
+      # 4. 攏中之和 (ALIGNMENT)
+      - text: "4️⃣🤝對齊和盟"
+        file: alignment/index.qmd
+      # 5. 攏中之道 (DAO)
+      - text: "5️⃣🗺️架構編策"
+        file: dao/index.qmd
     right:
       - href: about.qmd
-        text: "關於"
+        text: "🌌關於"
       - icon: github
         href: https://github.com/hanteng/frmMiddle
       - icon: twitter
@@ -50,18 +69,16 @@ website:
           href: alignment/index.qmd
         - text: "5️⃣☯️攏中之道〜編策"
           href: dao/index.qmd
-      #- section: "智能國師"
-      - section: "📜智能國師（網誌文章）"
-        contents:
+      - text: "📜智能國師（網誌文章）"
+        href: posts/index.qmd
+      #- section: "📜智能國師（網誌文章）"
+      #  contents:
         #- text: "時事評論"
         #  href: news-comment.qmd
         #- text: "脈絡比較"
         #  href: contexts-compare.qmd
         #- text: "理論構建"
         #  href: frameworks-construct.qmd
-        - text: "文章（列表所有）"
-          href: posts/index.qmd  # 確保 posts/ 資料夾中有 index.qmd 或 listing 頁面
-
       #- text: "服務介紹"
       #  href: services.qmd  # 直接指向 .qmd 文件
       - text: "🌌關於智能國師《攏中道》"
