@@ -10,9 +10,9 @@ image: image.jpg
 
 ## 中道難攏詩句源起
 
-「**中道難攏**」指 ❝the center cannot hold❞ 詩句翻譯，來自諾貝爾文學奬得主葉慈（W.B.Yeats）《**二度降臨**》這道詩。
+「**中道難攏**」來自諾貝爾文學奬得主葉慈（W.B.Yeats）《**二度降臨**》詩句 ❝the center cannot hold❞ 。
 
-我初心是要打造【智能國師】產品原型的引子，尋求啟發，並暫定一個「定海神針」，就怕找不到方向。
+「**中道難攏**」作為引子，我仿作了新詩《[大聖歸來](#sec-the-poem)》，初心是要打造【智能國師】產品原型的引子，尋求啟發，並暫定一個「定海神針」，就怕找不到方向。
 
 若對打造【智能國師】產品原型有利，我會修改新詩的，若讀者有建議，請聯繫我。
 
@@ -44,7 +44,7 @@ While this poem is **copyrighted**, it merely represents an exploratory expressi
 
 仿改 葉慈（W.B.Yeats）的詩《**二度降臨**》([The Second Coming](https://en.wikipedia.org/wiki/The_Second_Coming_(poem)))，這首詩《大聖歸來》，主要是用來界定【智能國師】的基本問題意識（中道難攏），設定了些許邊界，就防走火入魔，但找解決方案時，也就是「中道如何攏得好（省多快）？」，怕沒了創造性生產力。
 
-## ☠新詩《大聖歸來》☠
+## ☠新詩《大聖歸來》☠ {#sec-the-poem}
 
 <!-- **歷史與文明的復仇** -->
 

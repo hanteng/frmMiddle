@@ -23,9 +23,9 @@ website:
   navbar:
     title: "地緣智能<br/>新框架"
     left:
-      # 1. 實力定位 (MIDDLEP)
-      - text: "1️⃣🔑定位框濟"
-        file: middlep/index.qmd
+      # 1. 實力紮根 (MIDDLEP)
+      - text: "1️⃣🔑國策能力"
+        file: middlep/index.md
       # 2. 攏中之謀 (MOU)
       - text: "2️⃣♞謀略縱横"
         file: mou/index.qmd
@@ -59,8 +59,8 @@ website:
         href: experts/index.qmd
       - section: "🌐《攏中道五慧》"
         contents:
-        - text: "1️⃣🔑中等強權〜框濟"
-          href: middlep/index.qmd  
+        - text: "1️⃣🔑中等強權〜框智"
+          href: middlep/index.md  
         - text: "2️⃣♞攏中之謀〜縱横"
           href: mou/index.qmd  
         - text: "3️⃣🦾攏中之智〜鏈網"
