@@ -38,6 +38,7 @@ website:
         href: index.qmd
       - text: "🤓國師專家（專家智庫）"
         href: experts/index.qmd
+      - section: "🌐《攏中道五慧》"
         contents:
         - text: "1️⃣🔑中等強權〜框濟"
           href: middlep/index.qmd  
