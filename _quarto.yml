@@ -26,7 +26,7 @@ website:
     left:
       # 1. 實力紮根 (MIDDLEP)
       - text: "1️⃣🔑國策能力"
-        file: middlep/index.md
+        file: middlep/index.qmd
       # 2. 攏中之謀 (MOU)
       - text: "2️⃣♞謀略縱横"
         file: mou/index.qmd
@@ -52,16 +52,22 @@ website:
     # Position: Defines the left-side navigation
     style: "docked"
     search: true
-    collapse-level: 4 
+    collapse-level: 3
     contents:
       - text: "🛖首頁"
         href: index.qmd
-      - text: "🤓國師專家（專家智庫）"
+        contents:
+          - text: "🏴‍☠️中道難攏"
+            href: posts/poem-center-cannot-hold/index.qmd 
+      - text: "🤓專家國師（含智庫）"
         href: experts/index.qmd
+        contents:
+        - text: "史學瀚"
+          href: experts/shih-victor.md 
       - section: "🌐《攏中道五慧》"
         contents:
         - text: "1️⃣🔑中等強權〜框智"
-          href: middlep/index.md  
+          href: middlep/index.qmd  
         - text: "2️⃣♞攏中之謀〜縱横"
           href: mou/index.qmd  
         - text: "3️⃣🦾攏中之智〜鏈網"
@@ -70,7 +76,7 @@ website:
           href: alignment/index.qmd
         - text: "5️⃣☯️攏中之道〜編策"
           href: dao/index.qmd
-      - text: "📜智能國師（網誌文章）"
+      - text: "📜智能國師（含文章）"
         href: posts/index.qmd
       #- section: "📜智能國師（網誌文章）"
       #  contents:
