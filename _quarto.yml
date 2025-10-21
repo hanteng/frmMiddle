@@ -12,7 +12,8 @@ project:
     - "*.md"
     - "!archive/"  
     - "!images_creation/"  
-
+    - "!*.qmd.md"
+    - "!*.drafts.md"
 website:
   site-url: https://mid.frmai.life # you must change this appropriately for RSS feeds to work properly
   title: "智能國師《攏中道》"
