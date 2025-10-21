@@ -3,3 +3,5 @@
 /.obsidian
 /_site
 /images_creation
+*.qmd.md
+*.drafts.md
