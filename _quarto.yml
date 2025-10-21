@@ -84,6 +84,8 @@ website:
       - text: "🌌關於智能國師《攏中道》"
         href: about.qmd
 
+bibliography: references.bib
+# csl: apa.csl   # 如需特定引用樣式，可取消註解並指定 CSL 檔名
 format:
   html:
     # 這是正確的位置！TOC 屬性必須在 format:html: Show up to H3 headers in the Right TOC
