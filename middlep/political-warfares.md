@@ -11,14 +11,7 @@ keywords:
   - 遏制政策
   - 統一戰線
   - 列寧主義
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    toc-title: "目錄"
-    smooth-scroll: true
 ---
-
 
 # ⚔️ 政治戰
 
