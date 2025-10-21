@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1️⃣🔑中等強權：分析〜國策能力與框智未來 – 智能國師《攏中道》</title>
+<title>1️⃣🔑中等強權〜國策能力與框智未來 – 智能國師《攏中道》</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -68,7 +70,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "搜索"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -163,18 +223,40 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🛖首頁</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../experts/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🤓國師專家（專家智庫）</span></a>
+  <a href="../posts/poem-center-cannot-hold/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🏴‍☠️中道難攏</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../experts/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🤓專家國師（含智庫）</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../experts/shih-victor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">史學瀚</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -219,7 +301,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../posts/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">📜智能國師（網誌文章）</span></a>
+ <span class="menu-text">📜智能國師（含文章）</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -238,7 +320,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#中等強權實用框架" id="toc-中等強權實用框架" class="nav-link active" data-scroll-target="#中等強權實用框架">🧭 中等強權：實用框架</a>
+  <li><a href="#頁面簡介-introduction" id="toc-頁面簡介-introduction" class="nav-link active" data-scroll-target="#頁面簡介-introduction">頁面簡介 (Introduction)</a></li>
+  <li><a href="#中等強權實用框架" id="toc-中等強權實用框架" class="nav-link" data-scroll-target="#中等強權實用框架">🧭 中等強權：實用框架</a>
   <ul>
   <li><a href="#起回顧整合" id="toc-起回顧整合" class="nav-link" data-scroll-target="#起回顧整合">起〜回顧整合</a>
   <ul class="collapse">
@@ -273,8 +356,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../middlep/index.html">🌐《攏中道五慧》</a></li><li class="breadcrumb-item"><a href="../middlep/index.html">1️⃣🔑中等強權〜框智</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">1️⃣🔑中等強權：分析〜國策能力與框智未來</h1>
-<p class="subtitle lead">聚焦戰略新框架：功能性、供應鏈與地緣爭議維度</p>
+<h1 class="title">1️⃣🔑中等強權〜國策能力與框智未來</h1>
+<p class="subtitle lead">聚焦戰略新框架：分析功能性、供應鏈與地緣爭議維度</p>
   <div class="quarto-categories">
     <div class="quarto-category">框架</div>
     <div class="quarto-category">中等強權理論</div>
@@ -303,6 +386,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="頁面簡介-introduction" class="level1">
+<h1>頁面簡介 (Introduction)</h1>
+<p>這裡是中期研究所有文章的列表。</p>
 <div id="wrn-middlep" class="callout callout-style-default callout-warning callout-titled" title="🚧 內容建設中 （Under Construction）" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -319,6 +405,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+</section>
 <section id="中等強權實用框架" class="level1">
 <h1>🧭 中等強權：實用框架</h1>
 <p>中美競合及兩者「同儕對手」（peer competitor）的共識認知下，<code>中等強權</code>正成為有用的分類及分析框架，去理解並應用兩大超級強權（superpowers）的應對之道（coping mechanism）。</p>
@@ -332,7 +419,10 @@ ul.task-list li input[type="checkbox"] {
 <li>承〜紥根創新
 <ul>
 <li>⚓ <strong>G20 現實</strong>：傳統的現實紥根</li>
-<li>💪 <strong>國策能力</strong>傳統面向：政府能力「工具」理性</li>
+<li>💪 <strong>國策能力</strong>傳統面向：政府能力「工具」理性
+<ul>
+<li><a href="../middlep/political-warfares.html">政治戰</a></li>
+</ul></li>
 <li>🦾 <strong>框智未來</strong>新興面向：科技預見「實用」理性</li>
 </ul></li>
 <li>轉/転〜突破選擇
@@ -462,11 +552,44 @@ ul.task-list li input[type="checkbox"] {
 -->
 
 
+
 </section>
 </section>
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1760918400000" data-listing-file-modified-sort="1761051034306" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2345">
+<div class="thumbnail"><a href="../middlep/political-warfares.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../middlep/political-warfares.html" class="no-external">政治戰 (Political Warfare)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../middlep/political-warfares.html" class="no-external">帶史感地更新國際關係與戰略思想：「國策能力」（statecraft）實踐，以及「智能國師」開發具有分析及指導意涵</a>
+</div>
+<div class="delink listing-description"><a href="../middlep/political-warfares.html" class="no-external">
+<strong>政治戰</strong>一詞，旨在描述一種有別於傳統軍事衝突，但又具有決定性戰略意義的<strong>總體鬥爭</strong>（Total Struggle）模式。它涵蓋了從公開外交、經濟援助到祕密顛覆、心理戰和資訊傳播等多種手段，目的皆是在<strong>不訴諸全面戰爭</strong>的前提下，<strong>達成國家或政治實體的戰略目標</strong>。
+</a></div>
+</div>
+<div class="metadata">
+<a href="../middlep/political-warfares.html" class="no-external">
+<div class="listing-date">
+2025年10月20日
+</div>
+<div class="listing-author">
+AI 助理〜廖漢騰指引
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">无匹配项</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
