@@ -1,7 +1,11 @@
 ---
-title: "1️⃣🔑中等強權：分析〜國策能力與框智未來"
-subtitle: "聚焦戰略新框架：功能性、供應鏈與地緣爭議維度"
-date: "2025-10-19"
+title: 1️⃣🔑中等強權〜國策能力與框智未來
+subtitle: 聚焦戰略新框架：分析功能性、供應鏈與地緣爭議維度
+date: 2025-10-19
+listing:
+  contents: "*.md" 
+  type: default    
+  sort: "title"
 categories:
   - 框架
   - 中等強權理論
@@ -17,6 +21,9 @@ tags:
   - Ranking-Methodology
   - 排名方法論
 ---
+
+# 頁面簡介 (Introduction)
+這裡是中期研究所有文章的列表。
 
 ::: {.callout-warning #wrn-middlep title="🚧 內容建設中 （Under Construction）" collapse=false open=true }
 ⛑Version: 0.0.1。未經定稿，持續更新中。👷🏾‍♀️
@@ -35,6 +42,7 @@ tags:
 * 承〜紥根創新
   * ⚓ **G20 現實**：傳統的現實紥根
   * 💪 **國策能力**傳統面向：政府能力「工具」理性
+	  * [政治戰](political-warfares.md) 
   * 🦾 **框智未來**新興面向：科技預見「實用」理性
 * 轉/転〜突破選擇
   * 🪟 **國策能力**能力框架選項
