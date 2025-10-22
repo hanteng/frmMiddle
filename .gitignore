@@ -2,6 +2,6 @@
 **/*.quarto_ipynb
 /.obsidian
 /_site
-/images_creation
+/X-images_creation
 *.qmd.md
 *.drafts.md
