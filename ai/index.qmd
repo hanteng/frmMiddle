@@ -1,7 +1,7 @@
 ---
-title: "3️⃣🦾攏中之智：操作〜AI 科技核心競合鏈網"
-subtitle: "解析中等強權在 AI 供應鏈、數據安全與科技治理中的角色"
-date: "2025-10-19"
+title: 3️⃣🦾攏中之智〜人工智慧之競合 _鏈網_
+subtitle: 解析中等強權在 AI 供應鏈、數據安全與科技治理中的角色
+date: 2025-10-19
 categories:
   - 科技
   - 陸權
@@ -9,17 +9,16 @@ categories:
   - 供應鏈
   - 地緣政治
 tags:
-  - AI Governance
+  - AI—Governance
   - 科技治理
-  - Supply Chain Security
+  - Supply—Chain—Security
   - 供應鏈安全
-  - Chip Sovereignty
+  - Chip—Sovereignty
   - 晶片主權
-  - Technological Competition
+  - Technological—Competition
   - 技術競合
 ---
-
-# 🚧 內容建設中 (Under Construction)
+## 🚧 內容建設中 (Under Construction)
 
 ## 🔐
 

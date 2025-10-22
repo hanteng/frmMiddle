@@ -1,7 +1,7 @@
 ---
-title: "2️⃣♞攏中之謀：範例〜特定國家策略競合縱横"
-subtitle: "使用大語言模型驗證框架有效性，具體出謀劃策。"
-date: "2025-10-19"
+title: 2️⃣♞攏中之謀〜國家策略之榜單 _縱横_
+subtitle: 使用大語言模型範例驗證框架有效性，具體出謀劃策。
+date: 2025-10-19
 categories:
   - 注意力制控權
   - 影響力
@@ -12,7 +12,7 @@ categories:
   - 國策案例
   - 策略模擬
   - 認知戰略
-  - 人機共治 # 新增分類
+  - 人機共治
 tags:
   - Strategy-Instances
   - 策略範例
@@ -31,10 +31,12 @@ tags:
   - Generative-AI
   - 生成式AI
   - HITL-Node
-  - 智能國師節點 # 新增標籤
+  - 智能國師節點
 ---
 
-# 🚧 內容建設中 (Under Construction)
+# [謀](https://en.wiktionary.org/wiki/%E8%AC%80)
+
+## 🚧 內容建設中 (Under Construction)
 
 ## 🔐
 
