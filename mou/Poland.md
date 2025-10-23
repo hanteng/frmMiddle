@@ -6,7 +6,7 @@ format: html
 ## Interactive globe
 
 ```{=html}
-<div id="globe" style="width:100%;height:auto;min-height:480px;background:#000"></div>
+<div id="globe" style="width:100%; height:auto; min-height:520px;background:#000"></div>
 <div style="margin-top:10px;">
   <select id="middlePowerSelector">
     </select>
@@ -31,7 +31,9 @@ import { LineGeometry } from "three/examples/jsm/lines/LineGeometry.js";
 
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as d3 from "d3";
-import { feature as topojsonFeature } from "topojson-client";
+
+
+import { feature } from "topojson-client";
 
 /* 🌍 ===== Settings ===== */
 const GLOBE_CONFIG = {
@@ -40,8 +42,9 @@ const GLOBE_CONFIG = {
     // Resource URLs
     //SAT_TEXTURE_URL: "https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg",
     SAT_TEXTURE_URL: "earth-blue-marble-maritime.png",
-    TOPO_URL: "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson",
-    //TOPO_URL: "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json",
+    ISO_MAP_URL: "iso_map.json",
+    TOPO_URL: "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json",
+    //TOPO_URL: "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson",
     // Camera settings
     CAMERA_DISTANCE: 200 * 2.6,   // ~520
     CLOSE_DISTANCE:  200 * 1.2,   // ~240
@@ -50,14 +53,45 @@ const GLOBE_CONFIG = {
 // Destructure values for convenience and readability
 const { RADIUS, SAT_TEXTURE_URL, TOPO_URL, CAMERA_DISTANCE, CLOSE_DISTANCE } = GLOBE_CONFIG;
 
+/* 🌍 ===== Data Loader ===== */
+let cachedCountries = null;
+
+async function loadCountriesWithISO3() {
+  if (cachedCountries) return cachedCountries;
+
+  const [topo, isoMap] = await Promise.all([
+    fetch(GLOBE_CONFIG.TOPO_URL).then(r => r.json()),
+    fetch(GLOBE_CONFIG.ISO_MAP_URL).then(r => r.json())
+  ]);
+
+  const countries = feature(topo, topo.objects.countries);
+
+  const reverseMap = {};
+  for (const [iso3, id] of Object.entries(isoMap)) {
+    reverseMap[id] = iso3;
+    
+  }
+
+  countries.features.forEach(f => {
+    const iso3 = reverseMap[Number(f.id)];
+    if (iso3) f.properties.iso3 = iso3;
+    console.log("Topo ID:", f.id, "→", reverseMap[f.id]);
+  });
+
+  cachedCountries = countries;
+  return countries;
+}
+
+
+
 /* ========================================= */
 /* 🌍 Middle Powers Configuration (ISO3 keys) */
 /* ========================================= */
 const MIDDLE_POWERS = {
   "SGP": { label: "Singapore (新加坡) 🇸🇬", name: "Singapore", lat: 1.35, lon: 103.8, color: 0x8dc1dc, closeDistF: 1.05, type: "Electoral Democracy" },
   "TWN": { label: "Taiwan (臺灣) 🇹🇼", name: "Taiwan", lat: 23.5, lon: 121.0, color: 0x2c7bb6, closeDistF: 1.125, type: "Full Democracy (Polyarchy)" },
-  "NLD": { label: "Netherlands (荷蘭) 🇳🇱", name: "Netherlands", lat: 52.3, lon: 5.5, color: 0x2c7bb6, closeDistF: 1.2, type: "Full Democracy (Polyarchy)" },
-  "KOR": { label: "South Korea (南韓) 🇰🇷", name: "South Korea", lat: 36.0, lon: 127.5, color: 0x2c7bb6, closeDistF: 1.28, type: "Full Democracy (Polyarchy)" },
+  "NLD": { label: "Netherlands (荷蘭) 🇳🇱", name: "Netherlands", lat: 52.3, lon: 5.5, color: 0x2c7bb6, closeDistF: 1.15, type: "Full Democracy (Polyarchy)" },
+  "KOR": { label: "South Korea (南韓) 🇰🇷", name: "South Korea", lat: 36.0, lon: 127.5, color: 0x2c7bb6, closeDistF: 1.18, type: "Full Democracy (Polyarchy)" },
   "ITA": { label: "Italy (義大利) 🇮🇹", name: "Italy", lat: 42.0, lon: 12.5, color: 0x2c7bb6, closeDistF: 1.30, type: "Full Democracy (Polyarchy)" },
   "DEU": { label: "Germany (德國) 🇩🇪", name: "Germany", lat: 51.0, lon: 9.0, color: 0x2c7bb6, closeDistF: 1.32, type: "Full Democracy (Polyarchy)" },
   "POL": { label: "Poland (波蘭) 🇵🇱", name: "Poland", lat: 52.0, lon: 19.0, color: 0x8dc1dc, closeDistF: 1.33, type: "Electoral Democracy" },
@@ -89,16 +123,16 @@ let container, camera, renderer, controls, globeGroup, scene;
 const countrySelect = document.getElementById("middlePowerSelector");
 
 // Helper to trigger animation (Needed before init() uses it)
-async function animateToSelectedCountry(countryName) {
-    if (!countryName) return;
+async function animateToSelectedCountry(isoCode3) {
+    if (!isoCode3) return;
 
-    const COUNTRY_DATA = MIDDLE_POWERS[countryName];
+    const COUNTRY_DATA = MIDDLE_POWERS[isoCode3];
     const targetLoc = [COUNTRY_DATA.lat, COUNTRY_DATA.lon];
     
     // 🔥 Updated to use closeDistF
     const targetCloseDistance = RADIUS * COUNTRY_DATA.closeDistF; 
 
-    const [lat, lon] = await findAndDrawCountryByName(countryName, COUNTRY_DATA.color);
+    const [lat, lon] = await findAndDrawCountryByISO3(isoCode3, COUNTRY_DATA.color);
 
     // Use the calculated target distance
     await animateCameraToLatLon(lat, lon, CAMERA_DISTANCE, targetCloseDistance, 1500);
@@ -265,13 +299,6 @@ function drawMarker(lat, lon, color = 0xff0000, size = 2) {
   return marker;
 }
 
-function addMarker(lat, lon, color = 0xff0000) {
-  const markerGeo = new THREE.SphereGeometry(2, 16, 16);
-  const markerMat = new THREE.MeshBasicMaterial({ color });
-  const marker = new THREE.Mesh(markerGeo, markerMat);
-  marker.position.copy(latLonToVector3(lat, lon, RADIUS * 1.01));
-  globeGroup.add(marker);
-}
 
 /* Draw GeoJSON feature boundaries on the globe surface */
 function drawBoundary(geojson, options = {}) {
@@ -318,19 +345,17 @@ function drawBoundary(geojson, options = {}) {
   return group;
 }
 
-/* Find a country by its ISO code, draw its boundary, and return its centroid [lat, lon] */
 async function findAndDrawCountryByISO3(isoCode3, boundaryColor = 0x00ffff) {
-  const resp = await fetch(TOPO_URL);              // world.geojson
-  const countries = await resp.json();             // FeatureCollection
+  const countries = await loadCountriesWithISO3();
 
-  // Expect MIDDLE_POWERS keys or fields to provide ISO3
   const countryData = MIDDLE_POWERS[isoCode3] || Object.values(MIDDLE_POWERS).find(c => c.iso3 === isoCode3);
-  if (!countryData) return null;
+  if (!countryData) {
+    console.warn("Missing metadata for:", isoCode3);
+    return null;
+  }
 
-  // Prefer ISO3 id match
-  let feature = countries.features.find(f => f.id === (countryData.iso3 || isoCode3));
+  let feature = countries.features.find(f => f.properties.iso3 === isoCode3);
 
-  // Fallback to name if ISO3 not present or mismatch
   if (!feature && countryData.name) {
     feature = countries.features.find(f => f.properties?.name === countryData.name);
   }
@@ -338,48 +363,16 @@ async function findAndDrawCountryByISO3(isoCode3, boundaryColor = 0x00ffff) {
   if (feature) {
     drawBoundary(
       { type: "FeatureCollection", features: [feature] },
-      { linewidth: 1.5, color: boundaryColor, offset: 1.003 } // use a visible linewidth first
+      { linewidth: 1.5, color: boundaryColor, offset: 1.003 }
     );
-    const c = d3.geoCentroid(feature); // [lon, lat]
-    return [c[1], c[0]];               // [lat, lon]
+    const [lon, lat] = d3.geoCentroid(feature);
+    return [lat, lon];
   }
 
-  // Fallback to provided lat/lon if feature not found
-  if (countryData.lat != null && countryData.lon != null) {
-    return [countryData.lat, countryData.lon];
-  }
+  console.warn("No polygon found for:", isoCode3);
   return null;
 }
 
-
-
-async function findAndDrawCountryByName(isoCode, boundaryColor = 0x00ffff) {
-  const resp = await fetch(TOPO_URL);        // TOPO_URL points to world.geojson
-  const countries = await resp.json();       // already a FeatureCollection
-
-  const countryData = MIDDLE_POWERS[isoCode];
-
-  console.log("isoCode:", isoCode);
-  console.log("countryData:", countryData);
-
-  if (!countryData) return null;
-
-  const feature = countries.features.find(
-    f => f.properties.name === countryData.name
-  );
-
-  if (feature) {
-    drawBoundary(
-      { type: "FeatureCollection", features: [feature] },
-      { linewidth: 0.002, color: boundaryColor, offset: 1.003 }
-    );
-    const c = d3.geoCentroid(feature); // [lon, lat]
-    return [c[1], c[0]];               // return [lat, lon]
-  }
-
-  // fallback if not found
-  return [countryData.lat, countryData.lon];
-}
 
 
 
@@ -422,7 +415,7 @@ function setupUI() {
 
     // 4. Set Event Handler
     countrySelect.onchange = (e) => {
-        // e.target.value will be the ISO code (e.g., "PL")
+        // e.target.value will be the ISO3 code (e.g., "PL")
         animateToSelectedCountry(e.target.value); 
     };
     
@@ -478,7 +471,8 @@ async function init() {
     
     // Assign scene components to the global 'let' variables
     scene = new THREE.Scene(); // 🔥 FIX 2: Create scene first
-    scene.background = new THREE.Color(0x02040a);
+    const lightGrayColor = 0xE0E0E0;
+    scene.background = new THREE.Color(lightGrayColor);
 
     camera = new THREE.PerspectiveCamera(45, container.clientWidth/container.clientHeight, 0.1, 5000);
 
@@ -519,14 +513,8 @@ async function init() {
     for (const iso3 in MIDDLE_POWERS) {
       const country = MIDDLE_POWERS[iso3];
 
-      if (iso3 === "SGP") {
-        // Singapore: draw a marker instead of polygon
-        drawMarker(country.lat, country.lon, country.color, 3);
-        centroids[iso3] = { lat: country.lat, lon: country.lon };
-      } else {
-        const [cLat, cLon] = await findAndDrawCountryByISO3(iso3, country.color);
-        centroids[iso3] = { lat: cLat, lon: cLon };
-      }
+      const [cLat, cLon] = await findAndDrawCountryByISO3(iso3, country.color);
+      centroids[iso3] = { lat: cLat, lon: cLon };
 
     }
 
@@ -571,3 +559,4 @@ window.addEventListener('DOMContentLoaded', () => {
 // ------------------------------------------------------------------
 
 </script>
+
