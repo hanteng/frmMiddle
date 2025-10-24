@@ -13,6 +13,10 @@
     ]
   },
   {
+    "listing": "/bang-KOR.html",
+    "items": []
+  },
+  {
     "listing": "/bang-JPN.html",
     "items": []
   },
@@ -20,6 +24,7 @@
     "listing": "/bang.html",
     "items": [
       "/bang-JPN.html",
+      "/bang-KOR.html",
       "/bang-POL.html",
       "/bang-TWN.html"
     ]

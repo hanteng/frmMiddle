@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="智能國師">
+<meta name="description" content="🇰🇷 韓國為東亞經濟與科技強國，憑藉半導體、汽車與造船等產業成為全球供應鏈要角。本文說明韓國的基本面、近代演進與截至 2025 年在安全、經濟與外交上的關鍵轉變，包括俄烏戰爭帶來的戰略教訓。">
 
-<title>1️⃣🔑中等強權〜國策能力與框智 未來 – 智能國師《攏中道》</title>
+<title>bang-kor – 智能國師《攏中道》</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-29a19b5acbeac218a8c860e48340d4df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-29a19b5acbeac218a8c860e48340d4df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,20 +75,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-posts-kor .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+      searchColumns: ["listing-image"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-posts-kor'] = new List('listing-posts-kor', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pages-kor .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pages-kor'] = new List('listing-pages-kor', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -99,11 +129,11 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="manifest" href="../site.webmanifest">
+<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="shortcut icon" href="./favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="manifest" href="./site.webmanifest">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -135,19 +165,19 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">地緣智能<br>新框架</span>
     </a>
   </div>
@@ -158,29 +188,29 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../middlep/index.html" aria-current="page"> 
+    <a class="nav-link" href="./middlep/index.html"> 
 <span class="menu-text">1️⃣🔑國策能力</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../mou/index.html"> 
+    <a class="nav-link" href="./mou/index.html"> 
 <span class="menu-text">2️⃣♞謀略縱横</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../ai/index.html"> 
+    <a class="nav-link" href="./ai/index.html"> 
 <span class="menu-text">3️⃣🦾智能鏈網</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../alignment/index.html"> 
+    <a class="nav-link" href="./alignment/index.html"> 
 <span class="menu-text">4️⃣🤝對齊和盟</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../dao/index.html"> 
+    <a class="nav-link" href="./dao/index.html"> 
 <span class="menu-text">5️⃣🗺️架構編策</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">🌌關於</span></a>
   </li>  
   <li class="nav-item compact">
@@ -199,166 +229,67 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../middlep/index.html">🌐《攏中道五慧》</a></li><li class="breadcrumb-item"><a href="../middlep/index.html">1️⃣🔑中等強權〜框智</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="搜索"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🛖首頁</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../posts/poem-center-cannot-hold/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🏴‍☠️中道難攏</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../experts/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🤓專家國師（含智庫）</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../experts/shih-victor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">史學瀚</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../bang.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🪸中等強權（含分類）</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">🌐《攏中道五慧》</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../middlep/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">1️⃣🔑中等強權〜框智</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mou/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2️⃣♞攏中之謀〜縱横</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../ai/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3️⃣🦾攏中之智〜鏈網</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../alignment/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4️⃣🤝攏中之和〜齊盟</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../dao/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5️⃣☯️攏中之道〜編策</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../posts/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">📜智能國師（含文章）</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🌌關於智能國師《攏中道》</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#頁面簡介-introduction" id="toc-頁面簡介-introduction" class="nav-link active" data-scroll-target="#頁面簡介-introduction">頁面簡介 (Introduction)</a></li>
+  <li><a href="#關於韓國-kor" id="toc-關於韓國-kor" class="nav-link active" data-scroll-target="#關於韓國-kor">🇰🇷 關於韓國 KOR</a>
+  <ul>
+  <li><a href="#基本事實" id="toc-基本事實" class="nav-link" data-scroll-target="#基本事實">👀 基本事實</a></li>
+  <li><a href="#歷史與近代演進" id="toc-歷史與近代演進" class="nav-link" data-scroll-target="#歷史與近代演進">歷史與近代演進</a></li>
+  <li><a href="#相關報導分析文章" id="toc-相關報導分析文章" class="nav-link" data-scroll-target="#相關報導分析文章">🤓 相關報導分析文章</a></li>
+  <li><a href="#相關理論分類頁面" id="toc-相關理論分類頁面" class="nav-link" data-scroll-target="#相關理論分類頁面">🧐 相關理論分類頁面</a></li>
+  <li><a href="#年發展趨勢" id="toc-年發展趨勢" class="nav-link" data-scroll-target="#年發展趨勢">📈2025年發展趨勢</a>
+  <ul class="collapse">
+  <li><a href="#經濟半導體與供應鏈重塑" id="toc-經濟半導體與供應鏈重塑" class="nav-link" data-scroll-target="#經濟半導體與供應鏈重塑">1. 經濟：半導體與供應鏈重塑</a></li>
+  <li><a href="#安全戰略自主與軍事現代化" id="toc-安全戰略自主與軍事現代化" class="nav-link" data-scroll-target="#安全戰略自主與軍事現代化">2. 安全：戰略自主與軍事現代化</a></li>
+  <li><a href="#外交美中之間與中地強權角色" id="toc-外交美中之間與中地強權角色" class="nav-link" data-scroll-target="#外交美中之間與中地強權角色">3. 外交：美中之間與中地強權角色</a></li>
+  </ul></li>
+  <li><a href="#牛津大學owid" id="toc-牛津大學owid" class="nav-link" data-scroll-target="#牛津大學owid">🎓 牛津大學OWID</a></li>
+  <li><a href="#總結" id="toc-總結" class="nav-link" data-scroll-target="#總結">💨 總結</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../middlep/index.html">🌐《攏中道五慧》</a></li><li class="breadcrumb-item"><a href="../middlep/index.html">1️⃣🔑中等強權〜框智</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">1️⃣🔑中等強權〜國策能力與框智 <em>未來</em></h1>
-<p class="subtitle lead">聚焦戰略新框架：分析功能性、供應鏈與地緣爭議維度</p>
   <div class="quarto-categories">
-    <div class="quarto-category">框架</div>
-    <div class="quarto-category">中等強權理論</div>
-    <div class="quarto-category">中等強權列表</div>
-    <div class="quarto-category">數據科學</div>
+    <div class="quarto-category">🌏030東亞</div>
+    <div class="quarto-category">🌏142亞洲</div>
+    <div class="quarto-category">🌐OECD</div>
+    <div class="quarto-category">🗺️中地強權</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    🇰🇷 韓國為東亞經濟與科技強國，憑藉半導體、汽車與造船等產業成為全球供應鏈要角。本文說明韓國的基本面、近代演進與截至 2025 年在安全、經濟與外交上的關鍵轉變，包括俄烏戰爭帶來的戰略教訓。
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">作者</div>
+    <div class="quarto-title-meta-contents">
+             <p>智能國師 </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">发布于</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025年10月19日</p>
+      <p class="date">2025年10月25日</p>
     </div>
   </div>
   
@@ -370,98 +301,134 @@ window.Quarto = {
 </header>
 
 
-<section id="頁面簡介-introduction" class="level1">
-<h1>頁面簡介 (Introduction)</h1>
-<p>這裡是中期研究所有文章的列表。</p>
-<div id="wrn-middlep" class="callout callout-style-default callout-warning callout-titled" title="🚧 內容建設中 （Under Construction）" open="true">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-警告&nbsp;1: 🚧 內容建設中 （Under Construction）
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>⛑Version: 0.0.1。未經定稿，持續更新中。👷🏾‍♀️</p>
-</div>
-</div>
-</div>
-<!--
-本...是整個研究的**核心基礎** ...紮根   G20 .....科技預見。
+<section id="關於韓國-kor" class="level1">
+<h1>🇰🇷 關於韓國 KOR</h1>
+<section id="基本事實" class="level2">
+<h2 class="anchored" data-anchor-id="基本事實">👀 基本事實</h2>
+<p>韓國（大韓民國，Republic of Korea, ROK）位於朝鮮半島南部，首都為首爾。它是亞洲重要的工業化國家與民主國家，擁有高度發展的製造業與科技產業。主要經濟優勢包括半導體製造、消費電子、汽車、電池與造船，代表企業有三星、SK、現代－起亞與LG。韓國為經濟合作暨發展組織（OECD）成員，且在區域供應鏈與全球貿易中扮演關鍵角色。</p>
+<p>自20世紀末民主化與產業快速升級後，韓國在全球經濟與技術領域持續擴張，政治體制以總統制為主，國會具實質制衡功能，選舉與公民社會活躍。</p>
+<blockquote class="blockquote">
+<p>來源：CIA 《世界概況》— South Korea (Republic of Korea)</p>
+</blockquote>
+</section>
+<section id="歷史與近代演進" class="level2">
+<h2 class="anchored" data-anchor-id="歷史與近代演進">歷史與近代演進</h2>
+<ul>
+<li>朝鮮半島在二戰後分裂，1950–53 年朝鮮戰爭確立南北對峙格局，美國安全保護與出口導向型工業政策推動韓國快速現代化。</li>
+<li>1960–80 年代透過國家主導的工業化策略建立重化與製造業基礎。</li>
+<li>1987 年起民主化改革確立當代民主制度，1990s–2000s 經濟全球化與技術升級使韓國成為高科技經濟體。</li>
+<li>21 世紀以來，韓國在半導體、顯示器與電動車電池等領域取得全球領先地位，同時面對來自北韓的軍事威脅與美中戰略競合下的外交調適壓力。</li>
+</ul>
+<hr>
+<hr>
+</section>
+<section id="相關報導分析文章" class="level2">
+<h2 class="anchored" data-anchor-id="相關報導分析文章">🤓 相關報導分析文章</h2>
+<p>這裡列出所有標籤為 <code>🇰🇷韓國</code> 的相關文章：</p>
+<div id="listing-posts-kor" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
 
-它將提供一個**實用**且**數據驅動**的**戰略新框架**，用於精確**定位**全球中等強權的**實力**和**影響力**。
-
-內容詳細闡述如何從**功能性**、**供應鏈**和**地緣爭議**三個核心維度，**量化**並**排名**中等強權在全球競合中的**戰略價值**。
--->
+</div>
+<div class="listing-no-matching d-none">无匹配项</div>
+</div>
+<hr>
+</section>
+<section id="相關理論分類頁面" class="level2">
+<h2 class="anchored" data-anchor-id="相關理論分類頁面">🧐 相關理論分類頁面</h2>
+<p>這裡列出所有標籤為 <code>🇰🇷韓國</code> 的理論分類頁面：</p>
+<div id="listing-pages-kor" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="筛选">
+    </div>
+</div>
+<table class="quarto-listing-table table caption-top">
+<tbody class="list">
+</tbody>
+</table>
+<div class="listing-no-matching d-none">无匹配项</div>
+</div>
+<hr>
+</section>
+<section id="年發展趨勢" class="level2">
+<h2 class="anchored" data-anchor-id="年發展趨勢">📈2025年發展趨勢</h2>
+<p>截至 2025 年，韓國的戰略環境與發展趨勢主要受以下幾個因素驅動：</p>
+<section id="經濟半導體與供應鏈重塑" class="level3">
+<h3 class="anchored" data-anchor-id="經濟半導體與供應鏈重塑">1. 經濟：半導體與供應鏈重塑</h3>
+<ul>
+<li><p><strong>國家半導體戰略深化</strong>：在全球晶片競爭和供應鏈安全壓力下，韓國持續深化其國家半導體戰略，加碼投資於極紫外光（EUV）微影技術、下一代記憶體與 AI 晶片研發。政府與三星、SK 海力士等企業合作，旨在鞏固在全球記憶體市場的領先地位，並提高系統晶片領域的市佔率。</p></li>
+<li><p><strong>關鍵礦物供應鏈多元化</strong>：俄烏戰爭後的全球趨勢加速了韓國對關鍵礦物（特別是電池與電動車所需）供應鏈的焦慮。韓國積極尋求與澳洲、加拿大、東南亞及拉丁美洲等國建立更穩固的夥伴關係，以降低對單一國家（如中國）的依賴，確保戰略產業的穩定性。</p></li>
+</ul>
+</section>
+<section id="安全戰略自主與軍事現代化" class="level3">
+<h3 class="anchored" data-anchor-id="安全戰略自主與軍事現代化">2. 安全：戰略自主與軍事現代化</h3>
+<ul>
+<li><p><strong>國防出口與軍工業擴張</strong>：受到俄烏戰爭的啟發，許多國家將軍工庫存補充與國防現代化列為優先事項。韓國憑藉其高效率的國防生產能力和相對實惠的價格，成為全球軍火市場的關鍵參與者，特別是在火砲、戰車（如 K2）和輕型戰機（如 FA-50）領域，簽署了數百億美元的出口訂單。</p></li>
+<li><p><strong>北韓威脅下的戰略調適</strong>：北韓核武與飛彈技術的進步迫使韓國與美國加強延伸威懾（Extended Deterrence）的合作，包括美國戰略資產的定期部署和聯合作戰演習。在內部，韓國亦持續投資於「殺傷鏈」（Kill Chain）和「韓國型三軸體系」（Korean Three-Axis System），旨在加強對北韓威脅的偵測、防禦與反擊能力。</p></li>
+<li><p><strong>對「俄烏戰爭教訓」的內化</strong>：俄烏戰爭的教訓，特別是無人機、情報戰與網路戰的重要性，被韓國軍方高度內化。這加速了韓國軍事現代化的進程，特別是在<strong>無人系統、電子戰與遠程精確打擊能力</strong>上的投入，以應對來自北韓的非對稱威脅。</p></li>
+</ul>
+</section>
+<section id="外交美中之間與中地強權角色" class="level3">
+<h3 class="anchored" data-anchor-id="外交美中之間與中地強權角色">3. 外交：美中之間與中地強權角色</h3>
+<ul>
+<li><p><strong>鞏固與美國的技術聯盟</strong>：韓國外交政策的核心仍是與美國的軍事同盟，此聯盟在 2020 年代中期已擴展到<strong>技術與經濟安全領域</strong>。韓國努力平衡與美國在半導體、AI 和生物科技等領域的合作，同時避免其企業遭受中國或美國的過度報復。</p></li>
+<li><p><strong>中地強權的外交擴張</strong>：韓國利用其經濟實力、民主制度和文化影響力（K-Culture），積極扮演「中地強權」（Middle Power）的角色。在外交上，試圖擴大其在全球事務中的能見度，包括在印太地區的經濟安全對話、國際人道援助及氣候變遷領域。這種外交擴張旨在超越朝鮮半島的局限，提升韓國的全球地位。</p></li>
+</ul>
+</section>
+</section>
+<section id="牛津大學owid" class="level2">
+<h2 class="anchored" data-anchor-id="牛津大學owid">🎓 牛津大學OWID</h2>
+<p>牛津大學我們的數據世界項目的信息可視化：</p>
+<ul>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all">🇰🇷韓國</a>
+<ul>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Population+and+Demographic+Change">人口和人口變化</a>
+<ul>
+<li>總和生育率：每名婦女生育數（與其他經濟體比較）：<iframe src="https://ourworldindata.org/grapher/children-born-per-woman?country=~KOR&amp;tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe></li>
+</ul></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Health">健康</a></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Energy+and+Environment">能源與環境</a>
+<ul>
+<li>能源組合：<iframe src="https://ourworldindata.org/grapher/energy-consumption-by-source-and-country?country=~KOR&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe></li>
+<li>人均二氧化碳排放量（與其他經濟體比較）：<iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita?time=1750..2023&amp;country=KOR~OWID_WRL~OWID_EU27~OWID_EAS&amp;tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe></li>
+</ul></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Food+and+Agriculture">糧食與農業</a>
+<ul>
+<li>穀物產量、產量、土地利用和農業生產指標：<iframe src="https://ourworldindata.org/grapher/index-of-cereal-production-yield-and-land-use?time=1961..2023&amp;country=~KOR&amp;tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe></li>
+</ul></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Poverty+and+Economic+Development">貧窮與經濟發展</a></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Education+and+Knowledge">教育與知識</a></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Innovation+and+Technological+Change">創新與技術變革</a>
+<ul>
+<li>每百萬人研發研究人員人數（與其他先進經濟體比較）：<iframe src="https://ourworldindata.org/grapher/researchers-in-rd-per-million-people?tab=line&amp;time=1996..2022&amp;country=KOR~OWID_WRL~OWID_EU27~OWID_HIC" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe></li>
+</ul></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Living+Conditions%2C+Community+and+Wellbeing">生活條件、社區和福祉</a>
+<ul>
+<li>每位工人的年工時（與多國歷年比較）：<iframe src="https://ourworldindata.org/grapher/annual-working-hours-per-worker?time=1976..2023&amp;country=KOR~USA~TWN~CHN~FIN~DEU&amp;tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe></li>
+</ul></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Human+Rights+and+Democracy">人權與民主</a>
+<ul>
+<li>民主分類（與其他區域比較）： <iframe src="https://ourworldindata.org/grapher/political-regime-classification-by-source?time=1945..latest&amp;country=KOR~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe></li>
+</ul></li>
+<li><a href="https://ourworldindata.org/search?countries=South+Korea&amp;resultType=all&amp;topics=Violence+and+War">暴力與戰爭</a>
+<ul>
+<li>軍費開支趨勢（與多國比較）：<iframe src="https://ourworldindata.org/grapher/military-spending-sipri?tab=line&amp;facet=none&amp;country=KOR~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="總結" class="level2">
+<h2 class="anchored" data-anchor-id="總結">💨 總結</h2>
+<p><code>🇰🇷 韓國</code>在 <strong>2025 年</strong>已牢固確立其在全球科技與安全供應鏈中的<strong>中地強權</strong>地位。在面對北韓核武威脅、以及美中科技與地緣政治競爭加劇的雙重壓力下，韓國的發展核心集中在<strong>戰略平衡</strong>與<strong>技術主導</strong>。韓國透過深化<strong>晶片、AI 與電池</strong>等核心技術的國家投資，以確保其在全球經濟的領先優勢；同時，利用其高效的軍工產業，不僅滿足自身國防現代化需求，更成為全球軍備市場的主要出口國，有效提升其地緣政治籌碼。在外交上，韓國在堅持美韓同盟的基礎上，積極在印太經濟架構中尋求更大的影響力，並在維持與中國的經貿關係上展現高超的調適能力。</p>
+<p>在本站，韓國被歸類為<a href="middlep/Principle-Powers/index.md">🗺️中地強權</a>。</p>
 
 
 
 </section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1760918400000" data-listing-file-modified-sort="1761331238971" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2345">
-<div class="thumbnail"><a href="../middlep/political-warfares.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../middlep/political-warfares.html" class="no-external">政治戰 (Political Warfare)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../middlep/political-warfares.html" class="no-external">帶史感地更新國際關係與戰略思想：「國策能力」（statecraft）實踐，以及「智能國師」開發具有分析及指導意涵</a>
-</div>
-<div class="delink listing-description"><a href="../middlep/political-warfares.html" class="no-external">
-<strong>政治戰</strong>一詞，旨在描述一種有別於傳統軍事衝突，但又具有決定性戰略意義的<strong>總體鬥爭</strong>（Total Struggle）模式。它涵蓋了從公開外交、經濟援助到祕密顛覆、心理戰和資訊傳播等多種手段，目的皆是在<strong>不訴諸全面戰爭</strong>的前提下，<strong>達成國家或政治實體的戰略目標</strong>。
-</a></div>
-</div>
-<div class="metadata">
-<a href="../middlep/political-warfares.html" class="no-external">
-<div class="listing-date">
-2025年10月20日
-</div>
-<div class="listing-author">
-AI 助理〜廖漢騰指引
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1761091200000" data-listing-file-modified-sort="1761331238970" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="580">
-<div class="thumbnail"><a href="../middlep/04-05-Principal-Powers.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../middlep/04-05-Principal-Powers.html" class="no-external">🗺️ 中「地」強權</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../middlep/04-05-Principal-Powers.html" class="no-external">包括區域強權（Principal Regional Powers）及新興領域強權（Principal Domain Powers）</a>
-</div>
-<div class="delink listing-description"><a href="../middlep/04-05-Principal-Powers.html" class="no-external">
-<code>中「地」強權</code>，指在特定地理<strong>區域</strong>或<strong>領域</strong>具有舉足輕重的地位的國家政府，包括：
-</a></div>
-</div>
-<div class="metadata">
-<a href="../middlep/04-05-Principal-Powers.html" class="no-external">
-<div class="listing-date">
-2025年10月22日
-</div>
-<div class="listing-author">
-AI 助理〜廖漢騰指引
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">无匹配项</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
