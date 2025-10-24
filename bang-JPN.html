@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-image"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -318,7 +318,30 @@ window.Quarto = {
 <p>這裡列出所有標籤為 <code>🇯🇵日本</code> 的相關文章：</p>
 <div id="listing-posts-jpn" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-categories="JUU2JTk2JUIwJUU4JUE5JUE5JTJDJUU1JTk1JThGJUU5JUExJThDJUU2JTg0JThGJUU4JUFEJTk4" data-listing-date-sort="1760572800000" data-listing-file-modified-sort="1761331275186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
+<a href="./posts/poem-center-cannot-hold/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/poem-center-cannot-hold/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+中道難攏：新詩《大聖歸來》
+</h5>
+<div class="card-text listing-description delink">
+「<strong>中道難攏</strong>」來自諾貝爾文學奬得主葉慈（W.B.Yeats）《<strong>二度降臨</strong>》詩句 ❝the center cannot hold❞ 。
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+廖漢騰 Han-Teng Liao
+</div>
+<div class="listing-date">
+2025年10月16日
+</div>
+</div>
+</div>
+</div></a>
+</div>
 </div>
 <div class="listing-no-matching d-none">无匹配项</div>
 </div>
