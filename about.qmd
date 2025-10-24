@@ -1,6 +1,6 @@
 ---
 title: 🌌關於智能國師《攏中道》
-image: devil.svg
+image: images/devil.svg
 about:
   template: jolla
   links:
@@ -36,6 +36,8 @@ about:
 換句話說，這裡分享的內容，主要是分享並吸收如何釣魚（如何打造智能國師？），至於什麼魚好，要養什麼魚，要吃還是觀賞（誰稱得上國師？國家需要什麼建議？等等），並不是本站的核心。
 
 不會單吹或單黑特定說法，而是提供具體脈絡及可查證來源。
+
+![](images/Trap-des-ouderdoms.png)
 
 <!-- book sale plug -->
 
