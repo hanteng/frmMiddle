@@ -1,0 +1,128 @@
+---
+ISO2: KR
+ISO3: KOR
+author: 智能國師
+date: 2025-10-25
+description: "🇰🇷 韓國為東亞經濟與科技強國，憑藉半導體、汽車與造船等產業成為全球供應鏈要角。本文說明韓國的基本面、近代演進與截至 2025 年在安全、經濟與外交上的關鍵轉變，包括俄烏戰爭帶來的戰略教訓。"
+image: /images/waved/emoji_u1f1f0_1f1f7.svg
+categories:
+  - 🌏030東亞
+  - 🌏142亞洲
+  - 🌐OECD
+  - 🗺️中地強權
+tags:
+  - 🇰🇷韓國
+  - 🇯🇵日本
+  - 🇺🇸美國
+  - 🇨🇳中國
+  - 🇰🇵北韓
+listing:
+  - id: posts-kor
+    contents: posts/
+    type: grid
+    sort: "date desc"
+    include:
+      tags: 🇰🇷韓國
+  - id: pages-kor
+    contents: middlep/
+    type: table
+    sort: "slug asc"
+    include:
+      tags: 🇰🇷韓國
+---
+
+# 🇰🇷 關於韓國 KOR
+
+## 👀 基本事實
+
+韓國（大韓民國，Republic of Korea, ROK）位於朝鮮半島南部，首都為首爾。它是亞洲重要的工業化國家與民主國家，擁有高度發展的製造業與科技產業。主要經濟優勢包括半導體製造、消費電子、汽車、電池與造船，代表企業有三星、SK、現代－起亞與LG。韓國為經濟合作暨發展組織（OECD）成員，且在區域供應鏈與全球貿易中扮演關鍵角色。
+
+自20世紀末民主化與產業快速升級後，韓國在全球經濟與技術領域持續擴張，政治體制以總統制為主，國會具實質制衡功能，選舉與公民社會活躍。
+
+> 來源：CIA 《世界概況》— South Korea (Republic of Korea)
+
+## 歷史與近代演進
+
+- 朝鮮半島在二戰後分裂，1950–53 年朝鮮戰爭確立南北對峙格局，美國安全保護與出口導向型工業政策推動韓國快速現代化。
+- 1960–80 年代透過國家主導的工業化策略建立重化與製造業基礎。
+- 1987 年起民主化改革確立當代民主制度，1990s–2000s 經濟全球化與技術升級使韓國成為高科技經濟體。
+- 21 世紀以來，韓國在半導體、顯示器與電動車電池等領域取得全球領先地位，同時面對來自北韓的軍事威脅與美中戰略競合下的外交調適壓力。
+
+***
+
+***
+
+## 🤓 相關報導分析文章
+
+這裡列出所有標籤為 `🇰🇷韓國` 的相關文章：
+
+:::{#posts-kor} 
+:::
+
+***
+
+## 🧐 相關理論分類頁面
+
+這裡列出所有標籤為 `🇰🇷韓國` 的理論分類頁面：
+
+:::{#pages-kor} 
+:::
+
+***
+
+## 📈2025年發展趨勢
+
+截至 2025 年，韓國的戰略環境與發展趨勢主要受以下幾個因素驅動：
+
+### 1. 經濟：半導體與供應鏈重塑
+
+- **國家半導體戰略深化**：在全球晶片競爭和供應鏈安全壓力下，韓國持續深化其國家半導體戰略，加碼投資於極紫外光（EUV）微影技術、下一代記憶體與 AI 晶片研發。政府與三星、SK 海力士等企業合作，旨在鞏固在全球記憶體市場的領先地位，並提高系統晶片領域的市佔率。
+    
+- **關鍵礦物供應鏈多元化**：俄烏戰爭後的全球趨勢加速了韓國對關鍵礦物（特別是電池與電動車所需）供應鏈的焦慮。韓國積極尋求與澳洲、加拿大、東南亞及拉丁美洲等國建立更穩固的夥伴關係，以降低對單一國家（如中國）的依賴，確保戰略產業的穩定性。
+    
+
+### 2. 安全：戰略自主與軍事現代化
+
+- **國防出口與軍工業擴張**：受到俄烏戰爭的啟發，許多國家將軍工庫存補充與國防現代化列為優先事項。韓國憑藉其高效率的國防生產能力和相對實惠的價格，成為全球軍火市場的關鍵參與者，特別是在火砲、戰車（如 K2）和輕型戰機（如 FA-50）領域，簽署了數百億美元的出口訂單。
+    
+- **北韓威脅下的戰略調適**：北韓核武與飛彈技術的進步迫使韓國與美國加強延伸威懾（Extended Deterrence）的合作，包括美國戰略資產的定期部署和聯合作戰演習。在內部，韓國亦持續投資於「殺傷鏈」（Kill Chain）和「韓國型三軸體系」（Korean Three-Axis System），旨在加強對北韓威脅的偵測、防禦與反擊能力。
+    
+- **對「俄烏戰爭教訓」的內化**：俄烏戰爭的教訓，特別是無人機、情報戰與網路戰的重要性，被韓國軍方高度內化。這加速了韓國軍事現代化的進程，特別是在**無人系統、電子戰與遠程精確打擊能力**上的投入，以應對來自北韓的非對稱威脅。
+    
+
+### 3. 外交：美中之間與中地強權角色
+
+- **鞏固與美國的技術聯盟**：韓國外交政策的核心仍是與美國的軍事同盟，此聯盟在 2020 年代中期已擴展到**技術與經濟安全領域**。韓國努力平衡與美國在半導體、AI 和生物科技等領域的合作，同時避免其企業遭受中國或美國的過度報復。
+    
+- **中地強權的外交擴張**：韓國利用其經濟實力、民主制度和文化影響力（K-Culture），積極扮演「中地強權」（Middle Power）的角色。在外交上，試圖擴大其在全球事務中的能見度，包括在印太地區的經濟安全對話、國際人道援助及氣候變遷領域。這種外交擴張旨在超越朝鮮半島的局限，提升韓國的全球地位。
+    
+
+## 🎓 牛津大學OWID
+
+牛津大學我們的數據世界項目的信息可視化：
+
+* [🇰🇷韓國](https://ourworldindata.org/search?countries=South+Korea&resultType=all)
+    - [人口和人口變化](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Population+and+Demographic+Change)
+        - 總和生育率：每名婦女生育數（與其他經濟體比較）：<iframe src="https://ourworldindata.org/grapher/children-born-per-woman?country=~KOR&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+    - [健康](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Health)
+    - [能源與環境](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Energy+and+Environment)
+        - 能源組合：<iframe src="https://ourworldindata.org/grapher/energy-consumption-by-source-and-country?country=~KOR&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+        - 人均二氧化碳排放量（與其他經濟體比較）：<iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita?time=1750..2023&country=KOR~OWID_WRL~OWID_EU27~OWID_EAS&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+    - [糧食與農業](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Food+and+Agriculture)
+        - 穀物產量、產量、土地利用和農業生產指標：<iframe src="https://ourworldindata.org/grapher/index-of-cereal-production-yield-and-land-use?time=1961..2023&country=~KOR&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+    - [貧窮與經濟發展](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Poverty+and+Economic+Development)
+    - [教育與知識](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Education+and+Knowledge)
+    - [創新與技術變革](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Innovation+and+Technological+Change)
+        - 每百萬人研發研究人員人數（與其他先進經濟體比較）：<iframe src="https://ourworldindata.org/grapher/researchers-in-rd-per-million-people?tab=line&time=1996..2022&country=KOR~OWID_WRL~OWID_EU27~OWID_HIC" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+    - [生活條件、社區和福祉](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Living+Conditions%2C+Community+and+Wellbeing)
+        - 每位工人的年工時（與多國歷年比較）：<iframe src="https://ourworldindata.org/grapher/annual-working-hours-per-worker?time=1976..2023&country=KOR~USA~TWN~CHN~FIN~DEU&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+    - [人權與民主](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Human+Rights+and+Democracy)
+        - 民主分類（與其他區域比較）： <iframe src="https://ourworldindata.org/grapher/political-regime-classification-by-source?time=1945..latest&country=KOR~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+    - [暴力與戰爭](https://ourworldindata.org/search?countries=South+Korea&resultType=all&topics=Violence+and+War)
+        - 軍費開支趨勢（與多國比較）：<iframe src="https://ourworldindata.org/grapher/military-spending-sipri?tab=line&facet=none&country=KOR~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## 💨 總結
+
+`🇰🇷 韓國`在 **2025 年**已牢固確立其在全球科技與安全供應鏈中的**中地強權**地位。在面對北韓核武威脅、以及美中科技與地緣政治競爭加劇的雙重壓力下，韓國的發展核心集中在**戰略平衡**與**技術主導**。韓國透過深化**晶片、AI 與電池**等核心技術的國家投資，以確保其在全球經濟的領先優勢；同時，利用其高效的軍工產業，不僅滿足自身國防現代化需求，更成為全球軍備市場的主要出口國，有效提升其地緣政治籌碼。在外交上，韓國在堅持美韓同盟的基礎上，積極在印太經濟架構中尋求更大的影響力，並在維持與中國的經貿關係上展現高超的調適能力。
+
+在本站，韓國被歸類為[🗺️中地強權](middlep/Principle-Powers/index.md)。
