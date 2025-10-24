@@ -1,18 +1,8 @@
 [
   {
-    "listing": "/bang/index.html",
-    "items": []
-  },
-  {
-    "listing": "/experts/index.html",
+    "listing": "/posts/index.html",
     "items": [
-      "/experts/shih-victor.html"
-    ]
-  },
-  {
-    "listing": "/bang-JPN.html",
-    "items": [
-      "/middlep/Major-Powers/index.html"
+      "/posts/poem-center-cannot-hold/index.html"
     ]
   },
   {
@@ -23,9 +13,21 @@
     ]
   },
   {
-    "listing": "/posts/index.html",
+    "listing": "/bang-JPN.html",
     "items": [
-      "/posts/poem-center-cannot-hold/index.html"
+      "/middlep/Major-Powers/index.html"
+    ]
+  },
+  {
+    "listing": "/bang.html",
+    "items": [
+      "/bang-JPN.html"
+    ]
+  },
+  {
+    "listing": "/experts/index.html",
+    "items": [
+      "/experts/shih-victor.html"
     ]
   }
 ]
