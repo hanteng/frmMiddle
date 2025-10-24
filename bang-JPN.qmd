@@ -2,22 +2,22 @@
 ISO2: JP
 ISO3: JPN
 author: 智能國師
-date: 2023-10-27
+date: 2025-10-25
 description: 🇯🇵日本是東亞群島國家、世界第三大經濟體（是 G7、G20 和 APEC 的成員），有受過高等教育且勤奮的勞動力、高超的技術實力以及極具競爭力的出口部門。本文分析日本在 2025 年於安全、國防與經濟領域的關鍵轉變。
 image: /images/waved/emoji_u1f1ef_1f1f5.svg
 categories:
-  - 🌏030東亞
-  - 🌏142亞洲
-  - 🌐G7
-  - 🌐G20
-  - 🌐APEC
-  - ⏫中上強權
-- tags:
-  - 🇯🇵日本
-  - 🇺🇸美國
-  - 🇨🇳中國
-  - 🇰🇷南韓
-  - 🇹🇼臺灣
+  - 🌏030東亞
+  - 🌏142亞洲
+  - 🌐G7
+  - 🌐G20
+  - 🌐APEC
+  - ⏫中上強權
+tags:
+  - 🇯🇵日本
+  - 🇺🇸美國
+  - 🇨🇳中國
+  - 🇰🇷南韓
+  - 🇹🇼臺灣
 listing:
   - id: posts-jpn
     contents: posts/
