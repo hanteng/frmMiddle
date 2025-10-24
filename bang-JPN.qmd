@@ -1,16 +1,23 @@
 ---
-country_code: JPN
+ISO2: JP
+ISO3: JPN
 author: 智能國師
 date: 2023-10-27
-description: 東亞群島國家、全球經濟前三大（是 G7、G20 和 APEC 的成員），有受過高等教育且勤奮的勞動力、高超的技術實力以及極具競爭力的出口部門。
+description: 🇯🇵日本是東亞群島國家、世界第三大經濟體（是 G7、G20 和 APEC 的成員），有受過高等教育且勤奮的勞動力、高超的技術實力以及極具競爭力的出口部門。本文分析日本在 2025 年於安全、國防與經濟領域的關鍵轉變。
 image: /images/waved/emoji_u1f1ef_1f1f5.svg
 categories:
-  - 亞洲
-  - "⏫中上強權"
-tags:
-  - 東亞
-  - 🇯🇵日本
-  - JPN
+  - 🌏030東亞
+  - 🌏142亞洲
+  - 🌐G7
+  - 🌐G20
+  - 🌐APEC
+  - ⏫中上強權
+- tags:
+  - 🇯🇵日本
+  - 🇺🇸美國
+  - 🇨🇳中國
+  - 🇰🇷南韓
+  - 🇹🇼臺灣
 listing:
   - id: posts-jpn
     contents: posts/
@@ -26,11 +33,15 @@ listing:
       tags: JPN
 ---
 
-# 🇯🇵 關於日本
+# 🇯🇵 關於日本 JPN
 
 ## 👀 基本事實
 
 日本是東亞的一個群島國家，由 6,852 個島嶼組成，沿亞洲太平洋海岸延伸。它擁有世界第三大經濟體，是主要的全球經濟強國。日本是 G7、G20 和 APEC 的成員。日本經濟高度發達，其特點是受過高等教育且勤奮的勞動力、高超的技術實力以及極具競爭力的出口部門。其主要產業是汽車、消費電子產品、電腦、半導體、鋼鐵和造船。
+
+1603年，經過數十年的內戰，德川幕府（幕藩體制下以武士階層為主導的政權）迎來了一段長期的政治相對穩定與對外隔絕時期。兩個多世紀以來，這項政策使日本得以促成本土文化的綻放。日本在1854年與美國簽訂《神奈川條約》後開放港口，並開始密集的現代化與工業化。在19世紀末與20世紀初，日本成為能夠擊敗中國與俄羅斯軍隊的地區強權，並佔領了朝鮮、福爾摩沙（台灣）與庫頁島南部。1931–32年日本佔領滿洲，1937年對中國發動全面侵略。1941年日本在夏威夷珍珠港襲擊美軍，引發美國加入第二次世界大戰，日本迅速佔領東亞與東南亞的大部分地區。第二次世界大戰戰敗後，日本重建並成為經濟強國與美國盟友。
+
+雖然天皇保留國家團結象徵的地位，但民選政治家掌握實際決策權。經過三十年的空前經濟成長後，日本經濟自1990年代起出現顯著放緩，但該國仍為全球重要經濟體。2011年，日本發生有史以來最強烈的地震，隨之而來的海嘯摧毀本州東北部，造成數千人死亡，並損壞數座核電廠。安倍晉三於2012年再次出任首相，推行雄心勃勃的經濟與安全改革以振興經濟並鞏固國際地位。2019年，安倍成為日本戰後任期最長的首相；他於2020年辭職，由菅義偉接任。岸田文雄自2021年起擔任首相，推動「新資本主義」政策，強調經濟安全與防衛強化。**2025年，高市早苗成為日本首位女性首相，標誌日本政治的重要轉折；她主張強化國防與修訂憲法，並與日本維新會組成新聯合政府，取代原本與公明黨的聯盟。**
 
 > 來源：CIA [《世界概況》~日本](https://www.cia.gov/the-world-factbook/countries/japan/)
 
@@ -38,24 +49,84 @@ listing:
 
 ## 🤓 相關報導分析文章
 
-這裡列出所有標籤為 `JPN` 的相關文章：
+這裡列出所有標籤為 `🇯🇵日本` 的相關文章：
 
-::: {#posts-jpn}
+::: {.column-page-inset-right}
+::: {layout-ncol=1}
+
+{{< quco listing filter="tags: 🇯🇵日本" >}}
+
+:::
 :::
 
 ---
 
 ## 🧐 相關理論分類頁面
 
-這裡列出所有標籤為 `JPN` 的理論分類頁面：
+這裡列出所有標籤為 `🇯🇵日本` 的理論分類頁面：
 
-::: {#pages-jpn}
+::: {.column-page-inset-right}
+::: {layout-ncol=1}
+
+{{< quco listing filter="tags: 🇯🇵日本" >}}
+
+:::
 :::
 
----
+## 📈2025年發展趨勢
+
+在 **2025 年**的最新發展趨勢中，日本的轉變主要體現在**國防自主化**、**經濟安全**和**政治領導力**的強化。
+
+### 🗺️地緣政治轉變：從「和平主義」到「主動安全」
+
+隨著新首相高市早苗上任，以及印太地區地緣政治競爭加劇，日本加速推進「正常國家化」進程，從專守防衛轉向更主動的安全角色。
+
+- ⚔️ **國防角色轉型**：新政府將**修憲**納入優先議程，特別是關於《憲法》第 9 條的討論，旨在賦予自衛隊更明確的地位和任務範圍，以應對來自中國和朝鮮的威脅。
+- 🇺🇸 **強化美日同盟**：日本成為美國在印太地區的**核心戰略夥伴**，共同深化在**太空、網絡、資訊共享**及**聯合作戰**方面的合作，特別是應對「台灣有事」的潛在情境。
+- 🌏 **經濟安全外交**：日本積極領導 **G7** 和其他多邊框架，推動**供應鏈韌性**和**關鍵技術保護**，將經濟安全與國家安全直接掛鉤，成為抗衡經濟脅迫的關鍵力量。
+- 🤝 **與區域夥伴深化合作**：加速與**澳大利亞**、**菲律賓**、**印度**和**韓國**等國在安全領域的合作，包括簽訂更多的《**互惠准入協定**》（RAA），以實現更便捷的部隊往來和聯合演習。
+
+### 💪 經驗實力：國防與技術投資大躍進
+
+日本將其地緣政治壓力轉化為對未來國家實力的投資，重點投入**防衛能力**和**關鍵技術**的自主性。
+
+|**🔢 領域**|**轉變描述**|**實力佐證（2025 年趨勢）**|
+|---|---|---|
+|**🛡️ 國防能力**|透過「防衛力強化」計畫，旨在獲得實質性的**反擊能力**（Counterstrike Capability），能夠遠程打擊敵方目標。|**國防預算佔 GDP 比例持續接近 2% 目標**，重點部署**長程巡弋飛彈**（如「遠程反艦飛彈」/Type 12 LRSAM 升級版）和無人機系統。|
+|**🏭 產業與技術**|推動「經濟安全保障」戰略，以補貼和稅收優惠吸引**半導體製造**回流，並確保人工智慧、量子技術等**未來技術的自主權**。|**台積電熊本二廠**等重大半導體投資持續推進，日本企業（如 Rapidus）獲得政府鉅額支持，目標在 **2025-2027 年**開始製造 2 奈米級先進晶片。|
+|**🗳️ 政治穩定性**|高市早苗組建的**新聯合政府**，雖然可能在國內面臨較大政治爭議，但在國防與修憲議題上擁有更強的推動能力。|新政府的成立，預計將加速原本謹慎的**安保政策決策**，例如潛在的**武器出口限制放寬**等議題。|
+|**💸 貨幣與財政**|持續應對日圓貶值和通脹壓力，日本央行可能在 2025 年維持寬鬆但**逐步測試退出負利率**的政策，以平衡經濟復甦與財政穩定。|持續觀望通脹率是否穩定維持在 2% 以上，若條件滿足，預計將進行**小幅的利率調整**，影響全球金融市場。|
+
+***
+
+## 🎓牛津大學OWID
+
+牛津大學我們的數據世界項目的信息可視化：
+
+* [🇯🇵日本](https://ourworldindata.org/search?countries=Japan&resultType=all)
+	- [人口和人口變化](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Population+and+Demographic+Change)
+		- 總和生育率：每名婦女生育數（與歐盟等比較）：<iframe src="https://ourworldindata.org/grapher/children-born-per-woman?country=~JPN&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+	- [健康](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Health)
+	- [能源與環境](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Energy+and+Environment)
+		- 能源組合：<iframe src="https://ourworldindata.org/grapher/energy-consumption-by-source-and-country?country=~JPN&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+		- 人均二氧化碳排放量（與歐盟等比較）：<iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita?time=1750..2023&country=JPN~OWID_WRL~OWID_EU27~OWID_EUR&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+	- [糧食與農業](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Food+and+Agriculture)
+		- 穀物產量、產量、土地利用和人口的變化：<iframe src="https://ourworldindata.org/grapher/index-of-cereal-production-yield-and-land-use?time=1961..2023&country=~JPN&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+	- [貧窮與經濟發展](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Poverty+and+Economic+Development)
+	- [教育與知識](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Education+and+Knowledge)
+	- [創新與技術變革](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Innovation+and+Technological+Change)
+		- 每百萬人研發研究人員人數（與歐盟等比較）：<iframe src="https://ourworldindata.org/grapher/researchers-in-rd-per-million-people?tab=line&time=1996..2022&country=JPN~OWID_WRL~OWID_EU27~OWID_HIC" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+	- [生活條件、社區和福祉](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Living+Conditions%2C+Community+and+Wellbeing)
+		- 每位工人的年工時（與多國歷年比較）：<iframe src="https://ourworldindata.org/grapher/annual-working-hours-per-worker?time=1976..2023&country=JPN~USA~TWN~CHN~FIN~DEU&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+	- [人權與民主](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Human+Rights+and+Democracy)
+		- 民主分類（與🇸🇬新加坡及🇹🇼臺灣歷年比較）： <iframe src="https://ourworldindata.org/grapher/political-regime-classification-by-source?time=1945..latest&country=JPN~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+	- [暴力與戰爭](https://ourworldindata.org/search?countries=Japan&resultType=all&topics=Violence+and+War)
+		- 軍費開支（與🇸🇬新加坡及🇹🇼臺灣歷年比較）：
+		- <iframe src="https://ourworldindata.org/grapher/military-spending-sipri?tab=line&facet=none&country=JPN~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
 
 ## 💨 總結
 
-日本憑藉其先進的技術、強大的製造業和高度發展的經濟，在全球經濟和文化領域持續發揮著舉足輕重的作用。
+`🇯🇵日本`在 **2025 年**的轉變是：在地緣政治上，新首相上任加速了從「和平主義」到「**主動安全**」的戰略轉型，深化與美國及區域夥伴的安全合作；在經驗實力上，則以**國防預算持續增加**和**關鍵技術（如半導體）的自主化投資**為核心，強化其在印太地區的戰略份量和經濟韌性。
 
 在本站，日本被歸類為 [⏫中上強權](/middlep/Major-Powers/index.qmd)。
