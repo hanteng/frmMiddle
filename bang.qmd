@@ -4,7 +4,7 @@ listing:
   id: powers-middle
   contents: "bang*.qmd"
   type: grid 
-  fields: [image, title, country_code, description] 
+  fields: [image, title, ISO3, ISO2, description] 
   #sort: "slug asc" 
   sort-ui: true
   filter-ui: true
