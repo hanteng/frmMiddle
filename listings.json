@@ -1,14 +1,23 @@
 [
   {
+    "listing": "/bang/index.html",
+    "items": []
+  },
+  {
     "listing": "/experts/index.html",
     "items": [
       "/experts/shih-victor.html"
     ]
   },
   {
+    "listing": "/bang-JPN.html",
+    "items": [
+      "/middlep/Major-Powers/index.html"
+    ]
+  },
+  {
     "listing": "/middlep/index.html",
     "items": [
-      "/middlep/Major-Powers/index.html",
       "/middlep/political-warfares.html",
       "/middlep/04-05-Principal-Powers.html"
     ]
@@ -18,9 +27,5 @@
     "items": [
       "/posts/poem-center-cannot-hold/index.html"
     ]
-  },
-  {
-    "listing": "/bang/index.html",
-    "items": []
   }
 ]

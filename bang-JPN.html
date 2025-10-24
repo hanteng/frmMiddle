@@ -9,7 +9,7 @@
 <meta name="author" content="智能國師">
 <meta name="description" content="探索日本的地理、全球經濟地位與高科技產業。">
 
-<title>index – 智能國師《攏中道》</title>
+<title>bang-jpn – 智能國師《攏中道》</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,24 +25,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-29a19b5acbeac218a8c860e48340d4df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-29a19b5acbeac218a8c860e48340d4df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,14 +72,100 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "搜索"
   }
 }</script>
-<link rel="icon" type="image/png" href="../../favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-<link rel="shortcut icon" href="../../favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-<link rel="manifest" href="../../site.webmanifest">
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts-jpn .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts-jpn'] = new List('listing-posts-jpn', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pages-jpn .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pages-jpn'] = new List('listing-pages-jpn', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="shortcut icon" href="./favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="manifest" href="./site.webmanifest">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -87,9 +175,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">地緣智能<br>新框架</span>
     </a>
   </div>
@@ -100,29 +188,29 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../middlep/index.html"> 
+    <a class="nav-link" href="./middlep/index.html"> 
 <span class="menu-text">1️⃣🔑國策能力</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../mou/index.html"> 
+    <a class="nav-link" href="./mou/index.html"> 
 <span class="menu-text">2️⃣♞謀略縱横</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../ai/index.html"> 
+    <a class="nav-link" href="./ai/index.html"> 
 <span class="menu-text">3️⃣🦾智能鏈網</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../alignment/index.html"> 
+    <a class="nav-link" href="./alignment/index.html"> 
 <span class="menu-text">4️⃣🤝對齊和盟</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../dao/index.html"> 
+    <a class="nav-link" href="./dao/index.html"> 
 <span class="menu-text">5️⃣🗺️架構編策</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">🌌關於</span></a>
   </li>  
   <li class="nav-item compact">
@@ -151,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#關於日本" id="toc-關於日本" class="nav-link active" data-scroll-target="#關於日本">🇯🇵關於日本</a>
+  <li><a href="#關於日本" id="toc-關於日本" class="nav-link active" data-scroll-target="#關於日本">🇯🇵 關於日本</a>
   <ul>
   <li><a href="#基本事實" id="toc-基本事實" class="nav-link" data-scroll-target="#基本事實">👀 基本事實</a></li>
   <li><a href="#相關報導分析文章" id="toc-相關報導分析文章" class="nav-link" data-scroll-target="#相關報導分析文章">🤓 相關報導分析文章</a></li>
@@ -162,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -203,45 +291,100 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="關於日本" class="level1 page-columns page-full">
-<h1>🇯🇵關於日本</h1>
+<section id="關於日本" class="level1">
+<h1>🇯🇵 關於日本</h1>
 <section id="基本事實" class="level2">
 <h2 class="anchored" data-anchor-id="基本事實">👀 基本事實</h2>
 <p>日本是東亞的一個群島國家，由 6,852 個島嶼組成，沿亞洲太平洋海岸延伸。它擁有世界第三大經濟體，是主要的全球經濟強國。日本是 G7、G20 和 APEC 的成員。日本經濟高度發達，其特點是受過高等教育且勤奮的勞動力、高超的技術實力以及極具競爭力的出口部門。其主要產業是汽車、消費電子產品、電腦、半導體、鋼鐵和造船。</p>
 <blockquote class="blockquote">
 <p>來源：CIA <a href="https://www.cia.gov/the-world-factbook/countries/japan/">《世界概況》~日本</a></p>
 </blockquote>
+<hr>
 </section>
-<section id="相關報導分析文章" class="level2 page-columns page-full">
+<section id="相關報導分析文章" class="level2">
 <h2 class="anchored" data-anchor-id="相關報導分析文章">🤓 相關報導分析文章</h2>
-<p>這裡列出所有標籤為 <code>🇯🇵日本</code> 的相關文章：</p>
-<div class="column-page-inset-right">
-<div class="quarto-layout-panel" data-layout-ncol="1">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-{{&lt; quco listing filter="tags: 🇯🇵日本" &gt;}}
+<p>這裡列出所有標籤為 <code>JPN</code> 的相關文章：</p>
+<div id="listing-posts-jpn" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+
 </div>
+<div class="listing-no-matching d-none">无匹配项</div>
 </div>
-</div>
-</div>
+<hr>
 </section>
-<section id="相關理論分類頁面" class="level2 page-columns page-full">
+<section id="相關理論分類頁面" class="level2">
 <h2 class="anchored" data-anchor-id="相關理論分類頁面">🧐 相關理論分類頁面</h2>
-<p>這裡列出所有<!--類別為 `國家` 且-->標籤為 <code>🇯🇵日本</code> 的頁面：</p>
-<div class="column-page-inset-right">
-<div class="quarto-layout-panel" data-layout-ncol="1">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<p>{{&lt; quco listing filter="tags: 🇯🇵日本" &gt;}}<!-- categories: 國家 &&  --></p>
+<p>這裡列出所有標籤為 <code>JPN</code> 的理論分類頁面：</p>
+<div id="listing-pages-jpn" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-pages-jpn-sort" class="form-select" aria-label="排序方式" onchange="window['quarto-listings']['listing-pages-jpn'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">排序方式</option>
+      <option value="index" data-direction="asc">默认</option>
+      <option value="listing-date-sort" data-direction="asc">
+        日期 - 日期升序
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        日期 - 日期降序
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        标题
+      </option>
+      <option value="listing-author" data-direction="asc">
+        作者
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="筛选">
+    </div>
 </div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">日期</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">标题</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">作者</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-date-sort="1761091200000" data-listing-file-modified-sort="1761304899567" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="833" data-listing-title-sort="⏫ 中「上」強權" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2025年10月22日</span>
+</td>
+<td>
+<a href="./middlep/Major-Powers/index.html" class="title listing-title">⏫ 中「上」強權</a>
+</td>
+<td>
+<span class="listing-author">AI 助理〜廖漢騰指引</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">无匹配项</div>
 </div>
-</div>
-</div>
+<hr>
 </section>
 <section id="總結" class="level2">
 <h2 class="anchored" data-anchor-id="總結">💨 總結</h2>
 <p>日本憑藉其先進的技術、強大的製造業和高度發展的經濟，在全球經濟和文化領域持續發揮著舉足輕重的作用。</p>
-<p>在本站，日本被歸類為<a href="middlep/Major-Powers/index.md">⏫中上強權</a>。</p>
+<p>在本站，日本被歸類為 <a href="./middlep/Major-Powers/index.html">⏫中上強權</a>。</p>
+
 
 
 </section>
