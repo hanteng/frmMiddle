@@ -1,0 +1,112 @@
+---
+ISO2: PL
+ISO3: POL
+author: 智能國師
+date: 2023-10-27
+description: 🇵🇱波蘭**1999 年**加入**北約**（NATO），並於 **2004 年**加入**歐盟**（EU），探G20未來新星波蘭，如何從**1989 年**和 **1990 年**的自由選舉讓團結工會贏得了議會和總統的控制權，結束了**共產主義時代**
+image: /images/waved/emoji_u1f1f5_1f1f1.svg
+categories:
+  - 🌍151東歐
+  - 🌍150歐洲
+  - 🌐歐盟🇪🇺
+  - ⏫中上強權
+tags:
+  - 🇵🇱波蘭
+  - 🇰🇷南韓
+  - 🇺🇦烏克蘭
+  - 🇷🇺俄羅斯
+---
+
+# 🇵🇱關於波蘭
+
+## 👀 基本事實
+
+`🇵🇱波蘭`的國家歷史始於大約 **10 世紀中葉**。到了 **16 世紀中葉**，**波蘭立陶宛聯邦**統治著中歐和東歐一大片廣闊的土地。在 **18 世紀**期間，內部的動亂削弱了這個國家，隨後在 **1772 年至 1795 年**之間的一系列協議中，**俄羅斯**、**普魯士**和**奧地利**瓜分了波蘭。
+
+波蘭直到 **1918 年**才恢復獨立，但在**第二次世界大戰**中隨即被德國和蘇聯佔領。戰後，它成為一個**蘇聯的衛星國**。
+
+**1980 年**的勞工騷亂促成了獨立工會**團結工會**（Solidarity）的成立，該工會逐漸發展成為一個擁有超過 **1000 萬**成員的政治力量。**1989 年**和 **1990 年**的自由選舉讓團結工會贏得了議會和總統的控制權，結束了**共產主義時代**。**1990 年代初期**實施的「**休克療法**」計畫使該國的經濟轉型為中歐最具活力的經濟體之一。波蘭於 **1999 年**加入**北約**（NATO），並於 **2004 年**加入**歐盟**（EU）。
+
+> 來源：CIA [《世界概況》~波蘭](https://www.cia.gov/the-world-factbook/countries/poland/)
+
+## 🤓 相關報導分析文章
+
+這裡列出所有標籤為 `🇵🇱波蘭` 的相關文章：
+
+::: {.column-page-inset-right}
+::: {layout-ncol=1}
+
+{{< quco listing filter="tags: 🇵🇱波蘭" >}}
+
+:::
+:::
+
+## 🧐 相關理論分類頁面
+
+這裡列出所有<!--類別為 `國家` 且-->標籤為 `🇵🇱波蘭` 的頁面：
+
+::: {.column-page-inset-right}
+::: {layout-ncol=1}
+
+{{< quco listing filter="tags: 🇵🇱波蘭" >}}<!-- categories: 國家 &&  -->
+
+:::
+:::
+
+## 📈2025年發展趨勢
+
+在 **2025 年**的最新發展趨勢中，波蘭的轉變可以從以下地緣政治定位和實際國力（經驗實力）的增強來描述：
+
+### 🗺️地緣政治轉變：從「邊緣國」到「區域核心」
+
+波蘭不再是冷戰後的東歐邊緣國家，而成為**北約（NATO）和歐盟（EU）在東翼的前線與關鍵樞紐**。
+
+- ⚓ **北約東翼的堡壘**：波蘭是向烏克蘭提供軍事和人道援助的**最主要物流通道**（logistics hub）。這大大提升了它在北約決策圈中的發言權和重要性。    
+- 🚢 **軍事物流關鍵港口**：波蘭北部的**格但斯克港（Gdańsk）和格丁尼亞港（Gdynia）作為波羅的海重要的深水港口，成為接收大量軍事物資**（尤其是從美國和韓國運來的重型裝備）和向東部前線轉運的關鍵節點，鞏固了波蘭作為區域物流樞紐的地位。    
+- 🛡️ **重塑歐洲安全架構**：波蘭積極推動北約加強東翼軍事存在，並與波羅的海國家等盟友組成更緊密的合作集團，例如大力推動「**東盾**」（East Shield）計畫，旨在沿著與俄羅斯及白俄羅斯接壤的邊界建立強大的國防基礎設施。    
+- 🌊 **歐盟「三海」戰略中的核心角色**：波蘭是「**三海倡議**」（Three Seas Initiative，連接**波羅的海**、**亞得里亞海**和**黑海**）的主要發起國和核心，其作用是：    
+    - ⚡ **強化中東歐能源與交通安全**：透過倡議的投資，建立南北向的能源管線和交通網絡，減少該地區對俄羅斯的依賴。        
+    - 🤝 **連結東部夥伴**：支持烏克蘭等東部夥伴，強化歐洲一體化的韌性。
+- 🇪🇺 **回歸主流歐洲：** 隨著以唐納德·圖斯克（Donald Tusk）為首的親歐派政府上台，波蘭改善了與歐盟的關係，從過去的**內部摩擦者**變為**歐盟主流政治**的貢獻者和堅定支持者。
+
+### 💪 經驗實力（國力）的增強：國防與經濟的雙重加速
+
+波蘭將危機感轉化為實際的國家投資與能力建構，特別在國防方面邁出巨大步伐。
+
+|**🔢 領域**|**轉變描述**|**實力佐證（2025 年趨勢）**|
+|---|---|---|
+|**⚔️ 國防實力**|成為歐洲國防支出增長最快、決心最強的國家，目標是建立**歐洲最強大的陸軍**。|根據預算草案，波蘭 **2025 年的國防預算佔 GDP 的比例預計將達到約 4.7% 至 5%**，遠超北約要求的 2% 門檻，使其在北約成員國中排名第一或第二。|
+|**🇰🇷 2024-2025 韓國軍備接收**|大規模採購韓國等地的先進軍備，以快速填補援烏後留下的武器空缺，並實現軍隊現代化。|🌊 **K2「黑豹」主力戰車**：持續接收 2022 年簽訂合約中的首批 **K2 戰車**，並正推進第二批次約 180 輛 K2 戰車的採購與部分本土化生產協議，以滿足其建立大規模裝甲部隊的需求。 💥 **K9「雷霆」自走砲**：持續接收大量 **K9 榴彈砲**，大幅提升波蘭陸軍的遠程火力投射能力。|
+|**📈 經濟與能源安全**|經濟持續保持韌性，並大力投入能源轉型以擺脫對俄羅斯的依賴，增強國家戰略自主性。|繼續保持穩健的經濟增長預期。 **積極推進核電廠建設**，並投資天然氣基礎設施，以確保能源供應安全，降低地緣政治風險對經濟的衝擊。|
+|**🚚 基礎設施與物流**|戰時需求驅動基礎設施升級，以承擔更多區域物流功能。|**加速鐵路、公路和邊境口岸的現代化建設**，以應對大量軍事物資、人道援助和難民的跨境流動，鞏固其作為「歐洲東方門戶」的地位。|
+
+***
+
+## 🎓牛津大學OWID
+
+牛津大學我們的數據世界項目的信息可視化：
+
+* [🇵🇱波蘭](https://ourworldindata.org/search?countries=Poland&resultType=all)
+	- [人口和人口變化](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Population+and+Demographic+Change)
+		- 總和生育率：每名婦女生育數
+		- <iframe src="https://ourworldindata.org/grapher/children-born-per-woman?country=~POL&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+	- [健康](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Health)
+	- [能源與環境](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Energy+and+Environment)
+	- [糧食與農業](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Food+and+Agriculture)
+	- [貧窮與經濟發展](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Poverty+and+Economic+Development)
+	- [教育與知識](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Education+and+Knowledge)
+	- [創新與技術變革](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Innovation+and+Technological+Change)
+	- [生活條件、社區和福祉](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Living+Conditions%2C+Community+and+Wellbeing)
+	- [人權與民主](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Human+Rights+and+Democracy)
+		- 民主分類：
+		- <iframe src="https://ourworldindata.org/grapher/political-regime-classification-by-source?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+	- [暴力與戰爭](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Violence+and+War)
+		- 軍費開支：
+		- <iframe src="https://ourworldindata.org/grapher/military-spending-sipri?tab=line&country=~POL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+
+## 💨 總結
+
+`🇵🇱波蘭`在 **2025 年**的轉變是：在地緣政治上，因俄烏戰爭從**東翼邊緣躍升為區域核心**，積極推動「東盾」等防禦計畫；在經驗實力上，則以**創紀錄的國防支出**和**大規模採購韓製先進武器**（如 K2 戰車、K9 榴彈砲）為後盾，實質上強化了其作為歐洲安全與物流核心樞紐的地位。
+
+在本站，波蘭被歸類為[⏫中上強權](middlep/Major-Powers/index.md)。
