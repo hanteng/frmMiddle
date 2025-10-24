@@ -88,21 +88,24 @@ tags:
 
 * [🇵🇱波蘭](https://ourworldindata.org/search?countries=Poland&resultType=all)
 	- [人口和人口變化](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Population+and+Demographic+Change)
-		- 總和生育率：每名婦女生育數
-		- <iframe src="https://ourworldindata.org/grapher/children-born-per-woman?country=~POL&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+		- 總和生育率：每名婦女生育數（與歐盟等比較）：<iframe src="https://ourworldindata.org/grapher/children-born-per-woman?country=~POL&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [健康](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Health)
 	- [能源與環境](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Energy+and+Environment)
+		- 能源組合：<iframe src="https://ourworldindata.org/grapher/energy-consumption-by-source-and-country?country=~POL&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+		- 人均二氧化碳排放量（與歐盟等比較）：<iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita?time=1750..2023&country=POL~OWID_WRL~OWID_EU27~OWID_EUR&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [糧食與農業](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Food+and+Agriculture)
+		- 穀物產量、產量、土地利用和人口的變化：<iframe src="https://ourworldindata.org/grapher/index-of-cereal-production-yield-and-land-use?time=1961..2023&country=~POL&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [貧窮與經濟發展](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Poverty+and+Economic+Development)
 	- [教育與知識](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Education+and+Knowledge)
 	- [創新與技術變革](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Innovation+and+Technological+Change)
+		- 每百萬人研發研究人員人數（與歐盟等比較）：<iframe src="https://ourworldindata.org/grapher/researchers-in-rd-per-million-people?tab=line&time=1996..2022&country=POL~OWID_WRL~OWID_EU27~OWID_HIC" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [生活條件、社區和福祉](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Living+Conditions%2C+Community+and+Wellbeing)
+		- 每位工人的年工時（與多國歷年比較）：<iframe src="https://ourworldindata.org/grapher/annual-working-hours-per-worker?time=1976..2023&country=POL~USA~TWN~CHN~FIN~DEU&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [人權與民主](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Human+Rights+and+Democracy)
-		- 民主分類：
-		- <iframe src="https://ourworldindata.org/grapher/political-regime-classification-by-source?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+		- 民主分類（與新加坡及台灣歷年比較）： <iframe src="https://ourworldindata.org/grapher/political-regime-classification-by-source?time=1945..latest&country=POL~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [暴力與戰爭](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Violence+and+War)
-		- 軍費開支：
-		- <iframe src="https://ourworldindata.org/grapher/military-spending-sipri?tab=line&country=~POL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+		- 軍費開支（與新加坡及台灣歷年比較）：
+		- <iframe src="https://ourworldindata.org/grapher/military-spending-sipri?tab=line&facet=none&country=POL~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
 
 ## 💨 總結
