@@ -9,7 +9,7 @@ categories:
   - 🌍151東歐
   - 🌍150歐洲
   - 🌐歐盟🇪🇺
-  - ⏫中上強權
+  - 🗺️中地強權
 tags:
   - 🇵🇱波蘭
   - 🇰🇷南韓
@@ -102,9 +102,9 @@ tags:
 	- [生活條件、社區和福祉](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Living+Conditions%2C+Community+and+Wellbeing)
 		- 每位工人的年工時（與多國歷年比較）：<iframe src="https://ourworldindata.org/grapher/annual-working-hours-per-worker?time=1976..2023&country=POL~USA~TWN~CHN~FIN~DEU&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [人權與民主](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Human+Rights+and+Democracy)
-		- 民主分類（與新加坡及台灣歷年比較）： <iframe src="https://ourworldindata.org/grapher/political-regime-classification-by-source?time=1945..latest&country=POL~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+		- 民主分類（與🇸🇬新加坡及🇹🇼臺灣歷年比較）： <iframe src="https://ourworldindata.org/grapher/political-regime-classification-by-source?time=1945..latest&country=POL~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [暴力與戰爭](https://ourworldindata.org/search?countries=Poland&resultType=all&topics=Violence+and+War)
-		- 軍費開支（與新加坡及台灣歷年比較）：
+		- 軍費開支（與🇸🇬新加坡及🇹🇼臺灣歷年比較）：
 		- <iframe src="https://ourworldindata.org/grapher/military-spending-sipri?tab=line&facet=none&country=POL~SGP~TWN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
 
@@ -112,4 +112,4 @@ tags:
 
 `🇵🇱波蘭`在 **2025 年**的轉變是：在地緣政治上，因俄烏戰爭從**東翼邊緣躍升為區域核心**，積極推動「東盾」等防禦計畫；在經驗實力上，則以**創紀錄的國防支出**和**大規模採購韓製先進武器**（如 K2 戰車、K9 榴彈砲）為後盾，實質上強化了其作為歐洲安全與物流核心樞紐的地位。
 
-在本站，波蘭被歸類為[⏫中上強權](middlep/Major-Powers/index.md)。
+在本站，波蘭被歸類為[🗺️中地強權](middlep/Major-Powers/index.md)。
