@@ -1,0 +1,61 @@
+---
+country_code: JPN
+author: 智能國師
+date: 2023-10-27
+description: 東亞群島國家、全球經濟前三大（是 G7、G20 和 APEC 的成員），有受過高等教育且勤奮的勞動力、高超的技術實力以及極具競爭力的出口部門。
+image: /images/waved/emoji_u1f1ef_1f1f5.svg
+categories:
+  - 亞洲
+  - "⏫中上強權"
+tags:
+  - 東亞
+  - 🇯🇵日本
+  - JPN
+listing:
+  - id: posts-jpn
+    contents: posts/
+    type: grid
+    sort: "date desc"
+    include:
+      tags: JPN
+  - id: pages-jpn
+    contents: middlep/
+    type: table
+    sort: "slug asc"
+    include:
+      tags: JPN
+---
+
+# 🇯🇵 關於日本
+
+## 👀 基本事實
+
+日本是東亞的一個群島國家，由 6,852 個島嶼組成，沿亞洲太平洋海岸延伸。它擁有世界第三大經濟體，是主要的全球經濟強國。日本是 G7、G20 和 APEC 的成員。日本經濟高度發達，其特點是受過高等教育且勤奮的勞動力、高超的技術實力以及極具競爭力的出口部門。其主要產業是汽車、消費電子產品、電腦、半導體、鋼鐵和造船。
+
+> 來源：CIA [《世界概況》~日本](https://www.cia.gov/the-world-factbook/countries/japan/)
+
+---
+
+## 🤓 相關報導分析文章
+
+這裡列出所有標籤為 `JPN` 的相關文章：
+
+::: {#posts-jpn}
+:::
+
+---
+
+## 🧐 相關理論分類頁面
+
+這裡列出所有標籤為 `JPN` 的理論分類頁面：
+
+::: {#pages-jpn}
+:::
+
+---
+
+## 💨 總結
+
+日本憑藉其先進的技術、強大的製造業和高度發展的經濟，在全球經濟和文化領域持續發揮著舉足輕重的作用。
+
+在本站，日本被歸類為 [⏫中上強權](/middlep/Major-Powers/index.qmd)。

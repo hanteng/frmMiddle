@@ -1,0 +1,16 @@
+---
+image: images/bang.svg
+listing:
+  id: powers-middle
+  contents: "bang*.qmd"
+  type: grid 
+  fields: [image, title, country_code, description] 
+  #sort: "slug asc" 
+  sort-ui: true
+  filter-ui: true
+  categories: true
+---
+
+# 邦與幫
+
+## 全球中等權力分類索引
