@@ -1,3 +1,7 @@
+## Thanks
+
+* [Favicon Generator for perfect icons on all browsers](https://realfavicongenerator.net/your-favicon-is-ready)
+
 ## ⚖️ License
 
 This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**.
