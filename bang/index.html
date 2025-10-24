@@ -73,20 +73,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-powers-middle .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-country_code','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-powers-middle'] = new List('listing-powers-middle', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -141,7 +141,7 @@ window.Quarto = {
 <body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -204,7 +204,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../posts/index.html">📜智能國師（含文章）</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../bang/index.html">🪸中等強權（含分類）</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
@@ -214,7 +214,7 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
@@ -264,7 +264,7 @@ window.Quarto = {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../bang/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../bang/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">🪸中等強權（含分類）</span></a>
   </div>
 </li>
@@ -311,7 +311,7 @@ window.Quarto = {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../posts/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../posts/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">📜智能國師（含文章）</span></a>
   </div>
 </li>
@@ -331,58 +331,48 @@ window.Quarto = {
     <h2 id="toc-title">〜📖本頁章節目錄📑〜</h2>
    
   <ul>
-  <li><a href="#文章總覽" id="toc-文章總覽" class="nav-link active" data-scroll-target="#文章總覽">文章總覽</a></li>
+  <li><a href="#邦與幫" id="toc-邦與幫" class="nav-link active" data-scroll-target="#邦與幫">邦與幫</a>
+  <ul>
+  <li><a href="#全球中等權力分類索引" id="toc-全球中等權力分類索引" class="nav-link" data-scroll-target="#全球中等權力分類索引">全球中等權力分類索引</a></li>
+  </ul></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">分类</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">全部 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU1JTk1JThGJUU5JUExJThDJUU2JTg0JThGJUU4JUFEJTk4">問題意識 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU2JTk2JUIwJUU4JUE5JUE5">新詩 <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">分类</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">全部 <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<section id="文章總覽" class="level1">
-<h1>文章總覽</h1>
-<!-- title: "文章總覽" # 或 "網誌列表", "所有文章" 等中文標題-->
+<section id="邦與幫" class="level1">
+<h1>邦與幫</h1>
+<section id="全球中等權力分類索引" class="level2">
+<h2 class="anchored" data-anchor-id="全球中等權力分類索引">全球中等權力分類索引</h2>
 
 
 
 </section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUU2JTk2JUIwJUU4JUE5JUE5JTJDJUU1JTk1JThGJUU5JUExJThDJUU2JTg0JThGJUU4JUFEJTk4" data-listing-date-sort="1760572800000" data-listing-file-modified-sort="1761299716800" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
-<div class="thumbnail"><a href="../posts/poem-center-cannot-hold/index.html" class="no-external">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-powers-middle">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-powers-middle-sort" class="form-select" aria-label="排序方式" onchange="window['quarto-listings']['listing-powers-middle'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">排序方式</option>
+      <option value="index" data-direction="asc">默认</option>
+      <option value="listing-title" data-direction="asc">
+        标题
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="筛选">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
 
-<img loading="lazy" src="../posts/poem-center-cannot-hold/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../posts/poem-center-cannot-hold/index.html" class="no-external">中道難攏：新詩《大聖歸來》</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUU2JTk2JUIwJUU4JUE5JUE5'); return false;">新詩</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUU1JTk1JThGJUU5JUExJThDJUU2JTg0JThGJUU4JUFEJTk4'); return false;">問題意識</div>
-
-</div>
-<div class="delink listing-description"><a href="../posts/poem-center-cannot-hold/index.html" class="no-external">
-「<strong>中道難攏</strong>」來自諾貝爾文學奬得主葉慈（W.B.Yeats）《<strong>二度降臨</strong>》詩句 ❝the center cannot hold❞ 。
-</a></div>
-</div>
-<div class="metadata">
-<a href="../posts/poem-center-cannot-hold/index.html" class="no-external">
-<div class="listing-date">
-2025年10月16日
-</div>
-<div class="listing-author">
-廖漢騰 Han-Teng Liao
-</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">无匹配项</div>
 </div></main> <!-- /main -->
