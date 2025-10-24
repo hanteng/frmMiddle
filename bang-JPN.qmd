@@ -24,13 +24,13 @@ listing:
     type: grid
     sort: "date desc"
     include:
-      tags: JPN
+      tags: 🇯🇵日本
   - id: pages-jpn
     contents: middlep/
     type: table
     sort: "slug asc"
     include:
-      tags: JPN
+      tags: 🇯🇵日本
 ---
 
 # 🇯🇵 關於日本 JPN
@@ -45,19 +45,13 @@ listing:
 
 > 來源：CIA [《世界概況》~日本](https://www.cia.gov/the-world-factbook/countries/japan/)
 
----
+***
 
 ## 🤓 相關報導分析文章
 
 這裡列出所有標籤為 `🇯🇵日本` 的相關文章：
 
-::: {.column-page-inset-right}
-::: {layout-ncol=1}
-
-{{< quco listing filter="tags: 🇯🇵日本" >}}
-
-:::
-:::
+:::{#posts-jpn} :::
 
 ---
 
@@ -65,13 +59,7 @@ listing:
 
 這裡列出所有標籤為 `🇯🇵日本` 的理論分類頁面：
 
-::: {.column-page-inset-right}
-::: {layout-ncol=1}
-
-{{< quco listing filter="tags: 🇯🇵日本" >}}
-
-:::
-:::
+:::{#pages-jpn} :::
 
 ## 📈2025年發展趨勢
 
