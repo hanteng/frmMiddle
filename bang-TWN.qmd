@@ -9,9 +9,9 @@ categories:
   - 🌍030東亞
   - 🌍142亞洲
   - 🌐APEC
-  - 🔑中關強權
+  - 💪中關強權🔑
 tags:
-  - 🇹🇼台灣
+  - 🇹🇼臺灣
   - 🇺🇸美國
   - 🇨🇳中國
   - 🇯🇵日本
@@ -21,13 +21,13 @@ listing:
     type: grid
     sort: "date desc"
     include:
-      tags: 🇹🇼台灣
-  - id: twn-kor
+      tags: 🇹🇼臺灣
+  - id: twn-twn
     contents: middlep/
     type: table
     sort: "slug asc"
     include:
-      tags: 🇹🇼台灣
+      tags: 🇹🇼臺灣
 ---
 
 # 🇹🇼 關於臺灣 TWN
@@ -46,7 +46,7 @@ listing:
 
 ## 🤓 相關報導分析文章
 
-這裡列出所有標籤為 `🇹🇼台灣` 的相關文章：
+這裡列出所有標籤為 `🇹🇼臺灣` 的相關文章：
 
 :::{#posts-twn} 
 :::
@@ -55,7 +55,7 @@ listing:
 
 ## 🧐 相關理論分類頁面
 
-這裡列出所有標籤為 `🇹🇼台灣` 的理論分類頁面：
+這裡列出所有標籤為 `🇹🇼臺灣` 的理論分類頁面：
 
 :::{#pages-twn} 
 :::
@@ -99,7 +99,7 @@ listing:
 
 牛津大學我們的數據世界項目的信息可視化：
 
-* [🇹🇼台灣](https://ourworldindata.org/search?countries=Taiwan&resultType=all)
+* [🇹🇼臺灣](https://ourworldindata.org/search?countries=Taiwan&resultType=all)
 	- [人口和人口變化](https://ourworldindata.org/search?countries=Taiwan&resultType=all&topics=Population+and+Demographic+Change)
 		- 總和生育率：每名婦女生育數（與歐盟等比較）：<iframe src="https://ourworldindata.org/grapher/children-born-per-woman?country=~TWN&tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 	- [健康](https://ourworldindata.org/search?countries=Taiwan&resultType=all&topics=Health)
@@ -123,10 +123,10 @@ listing:
 
 ## 💨 總結
 
-`🇹🇼台灣`在 **2025 年**的轉變是：在地緣政治上，其「**晶片屏障**」地位使其成為全球經濟安全的核心。在戰略實踐上，臺灣將俄烏戰爭的教訓轉化為具體行動，重點強化**社會韌性**和**非對稱戰力**。
+`🇹🇼臺灣`在 **2025 年**的轉變是：在地緣政治上，其「**晶片屏障**」地位使其成為全球經濟安全的核心。在戰略實踐上，臺灣將俄烏戰爭的教訓轉化為具體行動，重點強化**社會韌性**和**非對稱戰力**。
 
 在 **2025 年**，臺灣在戰略與韌性上取得了多項實質進展：「**全民防衛動員署**」**完成首次針對**地方層級**的**跨部會複合情境模擬演習**，以提升戰時物資配送與基層協調能力。同時，**中科院**加速推動「**軍民通用無人機產業鏈**」。在外交方面，臺灣與**波蘭、立陶宛**等國簽署「**資通訊安全與民主韌性合作備忘錄**」。
 
 總結而言，臺灣在 **2025 年**不僅維持了其在科技上的不可替代性，更透過汲取實戰教訓，具體提升了**社會總體防衛能力**。
 
-在本站，臺灣被歸類為 [🔑中關強權](middlep/Critical-Middle-Powers/index.qmd)。
+在本站，臺灣被歸類為 [💪中關強權🔑](middlep/Critical-Middle-Powers/index.qmd)。
