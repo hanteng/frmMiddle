@@ -14,6 +14,15 @@ project:
     - "!images_creation/"  
     - "!*.qmd.md"
     - "!*.drafts.md"
+
+resources:
+  - resources/iso_map.json
+  - images/earth-blue-marble-maritime.png
+
+params:
+  iso_map: resources/iso_map.json
+  texture: images/earth-blue-marble-maritime.png
+
 website:
   site-url: https://mid.frmai.life # you must change this appropriately for RSS feeds to work properly
   title: "智能國師《攏中道》"
