@@ -26,6 +26,7 @@ params:
 website:
   site-url: https://mid.frmai.life # you must change this appropriately for RSS feeds to work properly
   title: "智能國師《攏中道》"
+  logo: /images/bang.svg
   description: "⁓ Holding Middle Grounds: A Savant Advisor for Seeking Life Opportunities in Turbulent Times。在 AI 完成愛因斯坦測試之前，打造能應對台海問題及中美賽局的「特異能力者」（Savant）智能國師，《攏中道：變局中求活路的智能國師》的網站，記錄整理編排相關方法與資源，並分享個人設計思考與實作規格。"
   # ---------------------------------------------
   # 頂部導航欄 (Navbar)
@@ -106,6 +107,7 @@ bibliography: references.bib
 # csl: apa.csl   # 如需特定引用樣式，可取消註解並指定 CSL 檔名
 format:
   html:
+    from: markdown+emoji
     # 這是正確的位置！TOC 屬性必須在 format:html: Show up to H3 headers in the Right TOC
     toc: true
     toc-collapse: false  
@@ -116,14 +118,16 @@ format:
     theme:
       - cosmo
       - brand
-    css: styles.css
+    css: 
+      - styles.css
+      - emoji-fonts.css
     include-in-header:
       - text: |
-          <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-          <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+          <link rel="shortcut icon" href="/favicon.ico">
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+          <link rel="manifest" href="/site.webmanifest">
 
 
 
