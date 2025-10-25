@@ -1,0 +1,11 @@
+/* Emoji-safe font stack for cross-platform rendering */
+.emoji-text, select, option {
+  font-family:
+    "Apple Color Emoji",       /* macOS, iOS */
+    "Segoe UI Emoji",          /* Windows */
+    "Noto Color Emoji",        /* Android, Linux */
+    "Twemoji Mozilla",         /* Firefox fallback */
+    "EmojiOne Color",          /* older Linux distros */
+    sans-serif;
+  font-size: 1em;
+}

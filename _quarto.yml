@@ -1,3 +1,5 @@
+#execute:
+#  python: "C:/ProgramData/miniconda3/envs/mygeocompy/python.exe"
 encoding: "UTF-8"
 lang: zh-hant
 # --- Override translations directly ---
@@ -32,22 +34,22 @@ website:
   # ---------------------------------------------
   navbar:
     logo: "images/bang.svg"
-    title: "地緣智能<br/>新框架"
+    #title: "地緣智能<br/>新框架"
     left:
       # 1. 實力紮根 (MIDDLEP)
-      - text: "1️⃣🔑國策能力"
+      - text: "1️⃣🔑國力" # "1️⃣🔑國策能力"
         file: middlep/index.qmd
       # 2. 攏中之謀 (MOU)
-      - text: "2️⃣♞謀略縱横"
+      - text: "2️⃣♞縱横" # "2️⃣♞謀略縱横"
         file: mou/index.qmd
       # 3. 攏中之智 (AI)
-      - text: "3️⃣🦾智能鏈網"
+      - text: "3️⃣🦾鏈網" # "3️⃣🦾智能鏈網"
         file: ai/index.qmd
       # 4. 攏中之和 (ALIGNMENT)
-      - text: "4️⃣🤝對齊和盟"
+      - text: "4️⃣🤝對齊" # "4️⃣🤝對齊和盟"
         file: alignment/index.qmd
       # 5. 攏中之道 (DAO)
-      - text: "5️⃣🗺️架構編策"
+      - text: "5️⃣🗺️編策" #"5️⃣🗺️架構編策"
         file: dao/index.qmd
     right:
       - href: about.qmd
@@ -76,6 +78,8 @@ website:
           href: experts/shih-victor.md 
       - text: "🪸中等強權（含分類）"
         href: bang.qmd
+      - text: "📳中等強權（可視化）"
+        href: bang-interactive.qmd
       - section: "🌐《攏中道五慧》"
         contents:
         - text: "1️⃣🔑中等強權〜框智"
