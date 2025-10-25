@@ -1,0 +1,35 @@
+Country_Code,ISO2,ISO3,loc_en,loc_zht,emojiflag,middlep,type,UN_l,UN_s,g_APEC,g_G20,g_OECD
+TWN,TW,TWN,Taiwan,臺灣,🇹🇼,🔑中關,完全民主,亞洲,東亞,True,False,False
+SGP,SG,SGP,Singapore,新加坡,🇸🇬,🔑中關,選舉式民主,亞洲,東南亞,True,False,False
+NLD,NL,NLD,Netherlands,荷蘭,🇳🇱,🔑中關,完全民主,歐洲,西歐,False,False,True
+FIN,FI,FIN,Finland,芬蘭,🇫🇮,🔑中關,完全民主,歐洲,北歐,False,False,True
+UKR,UA,UKR,Ukraine,烏克蘭,🇺🇦,🔑中關,選舉式民主,歐洲,東歐,False,False,False
+NOR,NO,NOR,Norway,挪威,🇳🇴,🔑中關,完全民主,Europe,北歐,False,False,True
+ISR,IL,ISR,Israel,以色列,🇮🇱,🔑中關,實質民主,亞洲,西亞,False,False,True
+PRK,KP,PRK,North Korea,北韓,🇰🇵,🔑中關,非選舉威權,亞洲,東亞,False,False,False
+IRN,IR,IRN,Iran,伊朗,🇮🇷,🔑中關,混合威權,亞洲,南亞,False,False,False
+IRL,IE,IRL,Ireland,愛爾蘭,🇮🇪,🔑中關,完全民主,歐洲,北歐,False,False,True
+SWE,SE,SWE,Sweden,瑞典,🇸🇪,🔑中關,完全民主,歐洲,北歐,False,False,True
+VNM,VN,VNM,Vietnam,越南,🇻🇳,🔑中關,非選舉威權,亞洲,東南亞,True,False,False
+PHL,PH,PHL,Philippines,菲律賓,🇵🇭,🔑中關,選舉式民主,亞洲,東南亞,True,False,False
+NGA,NG,NGA,Nigeria,奈及利亞,🇳🇬,🔑中關,選舉式民主,非洲,西非,False,False,False
+KEN,KE,KEN,Kenya,肯亞,🇰🇪,🔑中關,選舉式民主,非洲,東非,False,False,False
+COL,CO,COL,Colombia,哥倫比亞,🇨🇴,🔑中關,選舉式民主,美洲,南美洲,False,False,True
+ARG,AR,ARG,Argentina,阿根廷,🇦🇷,🗺️中地,選舉式民主,美洲,南美洲,False,True,False
+AUS,AU,AUS,Australia,澳洲,🇦🇺,🗺️中地,完全民主,大洋洲,澳大拉西亞,True,True,True
+BRA,BR,BRA,Brazil,巴西,🇧🇷,🗺️中地,選舉式民主,美洲,南美洲,False,True,False
+CAN,CA,CAN,Canada,加拿大,🇨🇦,🗺️中地,完全民主,美洲,北美洲,True,True,True
+IND,IN,IND,India,印度,🇮🇳,🗺️中地,選舉式民主,亞洲,南亞,False,True,False
+IDN,ID,IDN,Indonesia,印尼,🇮🇩,🗺️中地,選舉式民主,亞洲,東南亞,True,True,False
+ITA,IT,ITA,Italy,義大利,🇮🇹,🗺️中地,完全民主,歐洲,南歐,False,True,True
+KOR,KR,KOR,South Korea,南韓,🇰🇷,🗺️中地,完全民主,亞洲,東亞,True,True,True
+MEX,MX,MEX,Mexico,墨西哥,🇲🇽,🗺️中地,選舉式民主,美洲,中美洲,True,True,True
+POL,PL,POL,Poland,波蘭,🇵🇱,🗺️中地,選舉式民主,歐洲,東歐,False,False,True
+SAU,SA,SAU,Saudi Arabia,沙烏地阿拉伯,🇸🇦,🗺️中地,非選舉威權,亞洲,西亞,False,True,False
+ZAF,ZA,ZAF,South Africa,南非,🇿🇦,🗺️中地,選舉式民主,非洲,南非 (區域),False,True,False
+TUR,TR,TUR,Turkey,土耳其,🇹🇷,🗺️中地,多黨威權,亞洲,西亞,False,True,True
+GBR,GB,GBR,United Kingdom,英國,🇬🇧,⏫中上,完全民主,歐洲,北歐,False,True,True
+FRA,FR,FRA,France,法國,🇫🇷,⏫中上,完全民主,歐洲,西歐,False,True,True
+RUS,RU,RUS,Russia,俄羅斯,🇷🇺,⏫中上,非選舉威權,歐洲,東歐,False,True,False
+DEU,DE,DEU,Germany,德國,🇩🇪,⏫中上,完全民主,歐洲,西歐,False,True,True
+JPN,JP,JPN,Japan,日本,🇯🇵,⏫中上,完全民主,亞洲,東亞,True,True,True
