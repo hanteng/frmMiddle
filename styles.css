@@ -6,6 +6,7 @@
 
 /* 1. GDPR-Compliant Font-Face Rule */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Color Emoji';
   font-style: normal;
   font-weight: 400;
@@ -14,10 +15,7 @@
   
   /* CRUCIAL: Path is relative to the location of THIS CSS file */
   /* Assuming style.css is in the root, and fonts are in assets/fonts/ */
-  src: url('./assets/fonts/noto-color-emoji-flags.woff2') format('woff2'); 
-  
+  src: url('./assets/fonts/noto-color-emoji-v36-emoji-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */  
   /* Only load the font for the flag characters */
   unicode-range: U+1f1e6-1f1ff;
 }
-
-
