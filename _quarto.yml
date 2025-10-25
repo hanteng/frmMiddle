@@ -26,12 +26,12 @@ params:
 website:
   site-url: https://mid.frmai.life # you must change this appropriately for RSS feeds to work properly
   title: "智能國師《攏中道》"
-  logo: /images/bang.svg
   description: "⁓ Holding Middle Grounds: A Savant Advisor for Seeking Life Opportunities in Turbulent Times。在 AI 完成愛因斯坦測試之前，打造能應對台海問題及中美賽局的「特異能力者」（Savant）智能國師，《攏中道：變局中求活路的智能國師》的網站，記錄整理編排相關方法與資源，並分享個人設計思考與實作規格。"
   # ---------------------------------------------
   # 頂部導航欄 (Navbar)
   # ---------------------------------------------
   navbar:
+    logo: "images/bang.svg"
     title: "地緣智能<br/>新框架"
     left:
       # 1. 實力紮根 (MIDDLEP)
