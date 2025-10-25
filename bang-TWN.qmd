@@ -15,6 +15,19 @@ tags:
   - 🇺🇸美國
   - 🇨🇳中國
   - 🇯🇵日本
+listing:
+  - id: posts-twn
+    contents: posts/
+    type: grid
+    sort: "date desc"
+    include:
+      tags: 🇹🇼台灣
+  - id: twn-kor
+    contents: middlep/
+    type: table
+    sort: "slug asc"
+    include:
+      tags: 🇹🇼台灣
 ---
 
 # 🇹🇼 關於臺灣 TWN
@@ -35,12 +48,7 @@ tags:
 
 這裡列出所有標籤為 `🇹🇼台灣` 的相關文章：
 
-::: {.column-page-inset-right}
-::: {layout-ncol=1}
-
-{{< quco listing filter="tags: 🇹🇼台灣" >}}
-
-:::
+:::{#posts-twn} 
 :::
 
 ---
@@ -49,13 +57,9 @@ tags:
 
 這裡列出所有標籤為 `🇹🇼台灣` 的理論分類頁面：
 
-::: {.column-page-inset-right}
-::: {layout-ncol=1}
-
-{{< quco listing filter="tags: 🇹🇼台灣" >}}
-
+:::{#pages-twn} 
 :::
-:::
+
 
 ## 📈2025年發展趨勢
 
@@ -125,4 +129,4 @@ tags:
 
 總結而言，臺灣在 **2025 年**不僅維持了其在科技上的不可替代性，更透過汲取實戰教訓，具體提升了**社會總體防衛能力**。
 
-在本站，臺灣被歸類為 [🔑中關強權](/middlep/Critical-Middle-Powers/index.qmd)。
+在本站，臺灣被歸類為 [🔑中關強權](middlep/Critical-Middle-Powers/index.qmd)。
