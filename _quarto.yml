@@ -35,6 +35,7 @@ website:
   # 頂部導航欄 (Navbar)
   # ---------------------------------------------
   navbar:
+    background: dark
     logo: "images/bang.svg"
     #title: "地緣智能<br/>新框架"
     left:
@@ -123,7 +124,7 @@ format:
     #number-sections: true # enable right-hand TOC
     #number-depth: 4
     theme:
-      light: [litera, styles_converge.scss]
+      light: [flatly, styles_converge.scss]
       dark:  [darkly, styles_converge.scss]
     respect-user-color-scheme: true
     css: 
