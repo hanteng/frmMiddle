@@ -1,0 +1,18 @@
+/*-- scss:defaults --*/
+
+// --- 1. SET THE CONSISTENT CONTENT WIDTH ---
+// This variable controls the max width of the main content body.
+// Choose a value that looks good in both themes. 
+// A common and readable width is 900px, but you can adjust this.
+$grid-body-width: 900px; 
+// You can also set the overall max-width of the page for all content
+$body-max-width: 1400px; 
+
+// --- 2. SET THE CONSISTENT FONT SIZES ---
+// Litera and Slate likely have different heading sizes. Force them to be the same.
+$h1-font-size: 2rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.375rem;
+
+// Optionally, force a consistent sans-serif font family.
+// $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;

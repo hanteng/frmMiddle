@@ -113,6 +113,7 @@ bibliography: references.bib
 # csl: apa.csl   # 如需特定引用樣式，可取消註解並指定 CSL 檔名
 format:
   html:
+    
     from: markdown+emoji
     # 這是正確的位置！TOC 屬性必須在 format:html: Show up to H3 headers in the Right TOC
     toc: true
@@ -122,8 +123,11 @@ format:
     #number-sections: true # enable right-hand TOC
     #number-depth: 4
     theme:
+      light: [litera, styles_converge.scss]
+      dark:  [slate, styles_converge.scss]
       - cosmo
       - brand
+    respect-user-color-scheme: true
     css: 
       - styles.css
       - emoji-fonts.css
