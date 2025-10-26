@@ -18,5 +18,5 @@
   /* Assuming style.css is in the root, and fonts are in assets/fonts/ */
   src: url('./assets/fonts/noto-color-emoji-v36-emoji-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */  
   /* Only load the font for the flag characters */
-  unicode-range: U+1f1e6-1f1ff;
+  /* unicode-range: U+1f1e6-1f1ff;*/
 }
