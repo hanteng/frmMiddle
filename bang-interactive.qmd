@@ -184,7 +184,7 @@ const MIDDLE_POWERS = {
 
   // === 💪中上強權⏫ (UPPER MIDDLE POWERS - 5) - LAST ===
   "GBR": { label: "🇬🇧 英國 (United Kingdom)", name: "United Kingdom", lat: 55.0, lon: -3.0, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" },
-  "FRA": { label: "🇫🇷 法國 (France)", name: "France", lat: 46.23, lon: 15.72, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" },
+  "FRA": { label: "🇫🇷 法國 (France)", name: "France", lat: 46.23, lon: 2.42, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" },
   "RUS": { label: "🇷🇺 俄羅斯 (Russia)", name: "Russia", lat: 60.0, lon: 90.0, color: 0xDFA052, closeDistF: 3.00, type: "非選舉威權", middlep: "⏫中上" },
   "DEU": { label: "🇩🇪 德國 (Germany)", name: "Germany", lat: 51.0, lon: 9.0, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" },
   "JPN": { label: "🇯🇵 日本 (Japan)", name: "Japan", lat: 36.0, lon: 138.0, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" }
@@ -217,9 +217,10 @@ async function animateToSelectedCountry(isoCode3) {
 
   // ✅ Highlight only the selected country
   highlightCountry(feature, 0xffff5c, 7); // or COUNTRY_DATA.color
-
-  const [lon, lat] = d3.geoCentroid(feature);
-  await animateCameraToLatLon(lat, lon, CAMERA_DISTANCE, targetCloseDistance, 1500);
+  
+  //const [lon, lat] = d3.geoCentroid(feature);
+  //France is off when using d3.geoCentroid
+  await animateCameraToLatLon(COUNTRY_DATA.lat, COUNTRY_DATA.lon, CAMERA_DISTANCE, targetCloseDistance, 1500);
 }
 
 
@@ -524,9 +525,9 @@ async function findAndDrawCountryByISO3(isoCode3, boundaryColor = 0x00ffff) {
 
 
 
-/* ---------------------------------------------------- */
+/* -------------------------------- */
 /* 🖱️ Widget and Event Handlers (Setup) */
-/* ---------------------------------------------------- */
+/* -------------------------------- */
 
 function setupUI() {
     const countrySelect = document.getElementById("middlePowerSelector");
@@ -585,7 +586,6 @@ function onResize() {
 }
 window.addEventListener("resize", onResize);
 
-// Ensure globeMesh is declared globally: let globeMesh;
 
 function animate() {
     requestAnimationFrame(animate);
@@ -599,11 +599,22 @@ function animate() {
         raycaster.setFromCamera(screenCenter, camera);
         
         // 2. Find the intersection with the globe mesh
-        const intersects = raycaster.intersectObjects(globeGroup.children, true);
+// Use globeMesh if it's the single Mesh, or globeGroup.children if it's nested
+        const target = Array.isArray(globeGroup.children) ? globeGroup.children : globeMesh; 
+        const intersects = raycaster.intersectObjects(target, true); // Safer to use Objects/Group
+
+        console.log("Intersects found:", intersects.length); // DEBUG 1
 
         if (intersects.length > 0) {
             const intersectionPoint = intersects[0].point;
+            
+            // --- NEW DEBUG ---
             const coords = vector3ToLatLon(intersectionPoint);
+            console.log("Calculated Coords:", coords); // DEBUG 2
+
+            // --- END NEW DEBUG ---
+
+
             updateHTMLLabel(coords);
         } else {
             updateHTMLLabel({ lat: '---', lon: '---' }); 
@@ -688,11 +699,10 @@ async function init() {
     scene.add(globeGroup);
 
     // 4. ASYNC GLOBE/TOPO LOADING
-    const globeMesh = await createGlobeMaterial(); // Await ensures renderer is available
+    globeMesh = await createGlobeMaterial(); // Await ensures renderer is available
     // 🔥 FIX: Define sphereGeometry locally before use
     const sphereGeometry = new THREE.SphereGeometry(RADIUS, 64, 64); 
     globeGroup.add(new THREE.Mesh(sphereGeometry, globeMesh));
-
     
     // 5. ASYNC GLOBE/BOUNDARY LOADING
     //const countries = await drawAllCountries(0x888888); // draw all outlines in gray
