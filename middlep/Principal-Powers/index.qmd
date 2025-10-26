@@ -1,8 +1,8 @@
 ---
-title: "🗺️ 中「地」強權"
-subtitle: "包括區域強權（Principal Regional Powers）及新興領域強權（Principal Domain Powers）"
-author: "AI 助理〜廖漢騰指引"
-date: "2025-10-22"
+title: 🗺️ 中「地」強權
+subtitle: 包括區域強權（Principal Regional Powers）及新興領域強權（Principal Domain Powers）
+author: AI 助理〜廖漢騰指引
+date: 2025-10-22
 lang: zh-Hant
 keywords:
   - 區域強權
@@ -17,7 +17,7 @@ keywords:
 
  `中「地」強權` 通常是 G20 成員或具有 G20 潛力。
 
-## 🗺️ 中地強權列表
+## 🗺️中地強權列表
 
 中地強權列表，目前採用以下步驟得出：
 
