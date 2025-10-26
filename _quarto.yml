@@ -20,6 +20,8 @@ project:
 resources:
   - resources/iso_map.json
   - images/earth-blue-marble-maritime.png
+  - assets/fonts/
+  # 💡 CRITICAL: copy the entire fonts folder
 
 params:
   iso_map: resources/iso_map.json
