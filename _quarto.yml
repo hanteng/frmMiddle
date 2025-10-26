@@ -125,8 +125,6 @@ format:
     theme:
       light: [litera, styles_converge.scss]
       dark:  [slate, styles_converge.scss]
-      - cosmo
-      - brand
     respect-user-color-scheme: true
     css: 
       - styles.css
