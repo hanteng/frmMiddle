@@ -52,7 +52,7 @@ website:
       - text: "㈣🤝<br/>對齊" # "㈣🤝對齊和盟"
         file: alignment/index.qmd
       # 5. 攏中之道 (DAO)
-      - text: "5️⃣🗺️<br/>編策" #"5️⃣🗺️架構編策"
+      - text: "㈤🗺️<br/>編策" #"㈤🗺️架構編策"
         file: dao/index.qmd
     right:
       - href: about.qmd

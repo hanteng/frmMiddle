@@ -800,11 +800,11 @@ try:
     
     # 3. Select and reorder columns for a compact, readable table
     #         'loc_en': '英文名',  
-    d_compact_cols = { 'middlep':'權力區','emojiflag': '旗',
-        'loc_zht': '中文名', 'type': '🗳政治體制', 
-        'ISO2': 'ISO2', 'ISO3': 'ISO3', 
+    d_compact_cols = { 'emojiflag': '旗', 'loc_zht': '中文名', 
+        'type': '🗳政治體制', 'middlep':'權力區',
         'UN_l': '◉地域涵括表', 'UN_s': '⦿地域涵括表',
-        'g_APEC': '🌐APEC', 'g_G20': '🌐G20', 'g_OECD': '🌐OECD'
+        'g_APEC': '🌐APEC', 'g_G20': '🌐G20', 'g_OECD': '🌐OECD',
+        'ISO2': 'ISO2', 'ISO3': 'ISO3', 
     }
     df_compact = df[d_compact_cols.keys()].rename(columns=d_compact_cols)
 
@@ -818,14 +818,21 @@ try:
     
     # Using the standard Pandas Styler with an appropriate CSS class
     # to hint to Quarto/Jupyter how to render the table interactively.
-    styled_table = (
-        df_compact.style
+    styled_tableA = (
+        df_compact[['權力區', '🗳政治體制', '旗','中文名', '🌐APEC','🌐G20','🌐OECD','ISO2', 'ISO3']].style
         .set_table_attributes('class="dataframe table table-striped table-hover"') 
-        .set_caption("全球中等強權表")
+        .set_caption("全球中等強權表〜🗳政治體制與國際組織")
+        .to_html()
+    )
+    styled_tableB = (
+        df_compact[['權力區', '🗳政治體制', '旗','中文名','◉地域涵括表','⦿地域涵括表','ISO2', 'ISO3']].style
+        .set_table_attributes('class="dataframe table table-striped table-hover"') 
+        .set_caption("全球中等強權表〜🗳政治體制與地域涵括表")
         .to_html()
     )
     #df_compact
-    display(HTML(styled_table))
+    display(HTML(styled_tableA))
+    display(HTML(styled_tableB))
     #display(styled_table)
 
 except FileNotFoundError:

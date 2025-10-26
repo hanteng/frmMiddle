@@ -2,7 +2,7 @@
 image: images/bang.svg
 listing:
   id: powers-middle
-  contents: "bang*.qmd"
+  contents: "bang-???.qmd"
   type: grid 
   fields: [image, title, ISO3, ISO2, description] 
   #sort: "slug asc" 
