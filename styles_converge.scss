@@ -16,3 +16,14 @@ $h3-font-size: 1.375rem;
 
 // Optionally, force a consistent sans-serif font family.
 // $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
+// Target the logo image specifically when Quarto is in dark mode
+body.quarto-dark .navbar-brand img {
+  
+  // The filter property inverts the colors (black to white)
+  // `invert(100%)` turns black into white.
+  // We use `!important` to ensure it overrides the theme's default styles.
+  filter: invert(100%) !important; 
+}
