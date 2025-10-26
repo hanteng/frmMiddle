@@ -22,7 +22,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for Quarto publishing
-
+      # ➡️ STEP : Set up Python 3.12 Jupyter Dependencies
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12' # Use a recent stable version like 3.12 or 3.11
+      - name: Install Python dependencies
+        run: pip install jupyter nbformat ipykernel
+        
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
