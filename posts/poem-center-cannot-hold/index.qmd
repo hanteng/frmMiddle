@@ -193,7 +193,7 @@ While this poem is **copyrighted**, it merely represents an exploratory expressi
 
 ***
 
-<details>
+<details id="choose">
 
 <summary>👉 就問你，在這亂世，如何選擇？ </summary>
 🐟🫧🐠
