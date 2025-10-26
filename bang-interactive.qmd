@@ -56,9 +56,13 @@ tags:
 ## 全球中等權力（全球化）
 
 ```{=html}
-<div style="margin-top:10px;">
-  <select id="middlePowerSelector">
-    </select>
+<div style="display: flex; align-items: center; margin-top: 10px;">
+    中心：<div id="centerCoordLabel" style="color: #ccc; margin-right: 20px; font-weight: bold; font-family: sans-serif;">
+        ---
+    </div>
+
+    <select id="middlePowerSelector">
+        </select>
 </div>
 <div id="globe" style="width:100%; height:auto; min-height:520px;background:#000"></div>
 
@@ -107,6 +111,10 @@ let cachedCountries = null;
 let highlightGroup = new THREE.Group();
 let dashAnimationTime = 0;
 
+// This setup only needs to be done once, outside the render loop
+const raycaster = new THREE.Raycaster();
+const screenCenter = new THREE.Vector2(0, 0); // Center of screen in NDC
+
 
 async function loadCountriesWithISO3() {
   if (cachedCountries) return cachedCountries;
@@ -149,18 +157,18 @@ const MIDDLE_POWERS = {
   "UKR": { label: "🇺🇦 烏克蘭 (Ukraine)", name: "Ukraine", lat: 49.0, lon: 32.0, color: 0x8dc1dc, closeDistF: 1.38, type: "選舉式民主", middlep: "🔑中關" },
   "NOR": { label: "🇳🇴 挪威 (Norway)", name: "Norway", lat: 61.0, lon: 8.0, color: 0x2c7bb6, closeDistF: 1.39, type: "完全民主", middlep: "🔑中關" },
   "ISR": { label: "🇮🇱 以色列 (Israel)", name: "Israel", lat: 31.5, lon: 34.8, color: 0x2c7bb6, closeDistF: 1.25, type: "實質民主", middlep: "🔑中關" },
-  "PRK": { label: "🇰🇵 北韓 (North Korea)", name: "North Korea", lat: 40.0, lon: 127.0, color: 0xD73027, closeDistF: 1.40, type: "非選舉威權", middlep: "🔑中關" },
+  "PRK": { label: "🇰🇵 北韓 (North Korea)", name: "North Korea", lat: 40.0, lon: 127.0, color: 0xDFA052, closeDistF: 1.40, type: "非選舉威權", middlep: "🔑中關" },
   "IRN": { label: "🇮🇷 伊朗 (Iran)", name: "Iran", lat: 32.0, lon: 53.0, color: 0xE6F598, closeDistF: 1.50, type: "混合威權", middlep: "🔑中關" },
   "IRL": { label: "🇮🇪 愛爾蘭 (Ireland)", name: "Ireland", lat: 53.3, lon: -8.0, color: 0x2c7bb6, closeDistF: 1.20, type: "完全民主", middlep: "🔑中關" },
   "SWE": { label: "🇸🇪 瑞典 (Sweden)", name: "Sweden", lat: 62.0, lon: 15.0, color: 0x2c7bb6, closeDistF: 1.37, type: "完全民主", middlep: "🔑中關" },
-  "VNM": { label: "🇻🇳 越南 (Vietnam)", name: "Vietnam", lat: 16.0, lon: 108.0, color: 0xD73027, closeDistF: 1.70, type: "非選舉威權", middlep: "🔑中關" },
+  "VNM": { label: "🇻🇳 越南 (Vietnam)", name: "Vietnam", lat: 16.0, lon: 108.0, color: 0xDFA052, closeDistF: 1.70, type: "非選舉威權", middlep: "🔑中關" },
   "PHL": { label: "🇵🇭 菲律賓 (Philippines)", name: "Philippines", lat: 13.0, lon: 122.0, color: 0x8dc1dc, closeDistF: 1.65, type: "選舉式民主", middlep: "🔑中關" },
   "NGA": { label: "🇳🇬 奈及利亞 (Nigeria)", name: "Nigeria", lat: 10.0, lon: 8.0, color: 0x8dc1dc, closeDistF: 1.90, type: "選舉式民主", middlep: "🔑中關" },
   "KEN": { label: "🇰🇪 肯亞 (Kenya)", name: "Kenya", lat: 1.0, lon: 37.0, color: 0x8dc1dc, closeDistF: 1.60, type: "選舉式民主", middlep: "🔑中關" },
-  "COL": { label: "🇨🇴 哥倫比亞 (Colombia)", name: "Colombia", lat: 4.0, lon: -73.0, color: 0x8dc1dc, closeDistF: 1.80, type: "選舉式民主", middlep: "🔑中關" },
+  "COL": { label: "🇨🇴 哥倫比亞 (Colombia)", name: "Colombia", lat: 4.0, lon: -73.0, color: 0x8dc1dc, closeDistF: 1.50, type: "選舉式民主", middlep: "🔑中關" },
 
   // === 🗺️ 中地強權 (REGIONAL MIDDLE POWERS - 13) ===
-  "ARG": { label: "🇦🇷 阿根廷 (Argentina)", name: "Argentina", lat: -34.0, lon: -64.0, color: 0x8dc1dc, closeDistF: 1.70, type: "選舉式民主", middlep: "🗺️中地" },
+  "ARG": { label: "🇦🇷 阿根廷 (Argentina)", name: "Argentina", lat: -34.0, lon: -64.0, color: 0x8dc1dc, closeDistF: 1.88, type: "選舉式民主", middlep: "🗺️中地" },
   "AUS": { label: "🇦🇺 澳洲 (Australia)", name: "Australia", lat: -25.0, lon: 135.0, color: 0x2c7bb6, closeDistF: 2, type: "完全民主", middlep: "🗺️中地" },
   "BRA": { label: "🇧🇷 巴西 (Brazil)", name: "Brazil", lat: -15.0, lon: -47.0, color: 0x8dc1dc, closeDistF: 2, type: "選舉式民主", middlep: "🗺️中地" },
   "CAN": { label: "🇨🇦 加拿大 (Canada)", name: "Canada", lat: 56.0, lon: -106.0, color: 0x2c7bb6, closeDistF: 2.1, type: "完全民主", middlep: "🗺️中地" },
@@ -170,15 +178,15 @@ const MIDDLE_POWERS = {
   "KOR": { label: "🇰🇷 南韓 (South Korea)", name: "South Korea", lat: 36.0, lon: 127.5, color: 0x2c7bb6, closeDistF: 1.18, type: "完全民主", middlep: "🗺️中地" },
   "MEX": { label: "🇲🇽 墨西哥 (Mexico)", name: "Mexico", lat: 23.0, lon: -102.0, color: 0x8dc1dc, closeDistF: 1.55, type: "選舉式民主", middlep: "🗺️中地" },
   "POL": { label: "🇵🇱 波蘭 (Poland)", name: "Poland", lat: 52.0, lon: 19.0, color: 0x8dc1dc, closeDistF: 1.33, type: "選舉式民主", middlep: "🗺️中地" },
-  "SAU": { label: "🇸🇦 沙烏地阿拉伯 (Saudi Arabia)", name: "Saudi Arabia", lat: 25.0, lon: 45.0, color: 0xD73027, closeDistF: 1.65, type: "非選舉威權", middlep: "🗺️中地" },
+  "SAU": { label: "🇸🇦 沙烏地阿拉伯 (Saudi Arabia)", name: "Saudi Arabia", lat: 25.0, lon: 45.0, color: 0xDFA052, closeDistF: 1.65, type: "非選舉威權", middlep: "🗺️中地" },
   "ZAF": { label: "🇿🇦 南非 (South Africa)", name: "South Africa", lat: -30.0, lon: 25.0, color: 0x8dc1dc, closeDistF: 1.48, type: "選舉式民主", middlep: "🗺️中地" },
   "TUR": { label: "🇹🇷 土耳其 (Turkey)", name: "Turkey", lat: 39.0, lon: 35.0, color: 0xE6F598, closeDistF: 1.38, type: "多黨威權", middlep: "🗺️中地" },
 
   // === 💪中上強權⏫ (UPPER MIDDLE POWERS - 5) - LAST ===
-  "GBR": { label: "🇬🇧 英國 (United Kingdom)", name: "United Kingdom", lat: 55.0, lon: -3.0, color: 0x2c7bb6, closeDistF: 1.3, type: "完全民主", middlep: "⏫中上" },
-  "FRA": { label: "🇫🇷 法國 (France)", name: "France", lat: 46.22, lon: 2.2, color: 0x2c7bb6, closeDistF: 1.3, type: "完全民主", middlep: "⏫中上" },
-  "RUS": { label: "🇷🇺 俄羅斯 (Russia)", name: "Russia", lat: 60.0, lon: 90.0, color: 0xD73027, closeDistF: 3.00, type: "非選舉威權", middlep: "⏫中上" },
-  "DEU": { label: "🇩🇪 德國 (Germany)", name: "Germany", lat: 51.0, lon: 9.0, color: 0x2c7bb6, closeDistF: 1.33, type: "完全民主", middlep: "⏫中上" },
+  "GBR": { label: "🇬🇧 英國 (United Kingdom)", name: "United Kingdom", lat: 55.0, lon: -3.0, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" },
+  "FRA": { label: "🇫🇷 法國 (France)", name: "France", lat: 46.23, lon: 15.72, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" },
+  "RUS": { label: "🇷🇺 俄羅斯 (Russia)", name: "Russia", lat: 60.0, lon: 90.0, color: 0xDFA052, closeDistF: 3.00, type: "非選舉威權", middlep: "⏫中上" },
+  "DEU": { label: "🇩🇪 德國 (Germany)", name: "Germany", lat: 51.0, lon: 9.0, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" },
   "JPN": { label: "🇯🇵 日本 (Japan)", name: "Japan", lat: 36.0, lon: 138.0, color: 0x2c7bb6, closeDistF: 1.45, type: "完全民主", middlep: "⏫中上" }
 };
 
@@ -187,7 +195,7 @@ const MIDDLE_POWERS = {
 /* ---------------------------------------------------- */
 
 // 1. Declare scene variables globally using 'let' so they can be assigned in init()
-let container, camera, renderer, controls, globeGroup, scene;
+let container, camera, renderer, controls, globeGroup,globeMesh, scene;
 
 // 2. Define the country select element variable here, before init() uses it
 const countrySelect = document.getElementById("middlePowerSelector");
@@ -247,6 +255,47 @@ function latLonToVector3(lat, lon, radius = RADIUS) {
     radius * Math.cos(phi),                    // Y
     -radius * Math.sin(phi) * Math.sin(theta)  // Z
   );
+}
+/* Inverse Cartesian → lat/lon (for center-of-view tracking) */
+function vector3ToLatLon(vector) {
+    const R = vector.length(); 
+    const yOverR = THREE.MathUtils.clamp(vector.y / R, -1, 1);
+    
+    // Y-up axis correctly implies phi calculation
+    const phi = Math.acos(yOverR); 
+    
+    // --- CRITICAL CHECK: Does this match your Z-axis sign? ---
+    // If your forward formula uses -R * sin(phi) * sin(theta) for Z, 
+    // then the inverse MUST use atan2(-vector.z, vector.x) for theta.
+    const theta = Math.atan2(-vector.z, vector.x); // <--- This must be correct
+
+    // 4. Convert Angles back to Degrees and apply the 90° latitude offset
+    // lat = 90 - (phi in degrees)
+    const lat = 90 - THREE.MathUtils.radToDeg(phi); 
+    
+    // lon = (theta in degrees)
+    let lon = THREE.MathUtils.radToDeg(theta);
+
+    // Ensure longitude is wrapped to the standard -180 to 180 range
+    if (lon > 180) {
+        lon -= 360;
+    } else if (lon < -180) {
+        lon += 360;
+    }
+
+    return { 
+        lat: lat.toFixed(2), 
+        lon: lon.toFixed(2) 
+    };
+}
+
+// Function to update the HTML display element
+function updateHTMLLabel(coords) {
+    const label = document.getElementById('centerCoordLabel');
+    if (label) {
+        // Updated display format
+        label.innerHTML = `Lat: ${coords.lat}° | Lon: ${coords.lon}°`;
+    }
 }
 
 /* ========================================= */
@@ -536,22 +585,47 @@ function onResize() {
 }
 window.addEventListener("resize", onResize);
 
+// Ensure globeMesh is declared globally: let globeMesh;
+
 function animate() {
-  requestAnimationFrame(animate);
-  controls.update();
+    requestAnimationFrame(animate);
+    controls.update();
 
-      // 🌀 Animate dash offset
-  dashAnimationTime += 0.02;
-  highlightGroup.traverse(obj => {
-    if (obj.material && obj.material.dashed) {
-      obj.material.dashOffset = dashAnimationTime;
-      obj.material.needsUpdate = true;
+    // === START: LAT/LON Center Display Logic ===
+
+    // 🎯 FIX: Check if the globeMesh is defined before using it for raycasting.
+    if (globeMesh) {
+        // 1. Raycast through the center of the screen
+        raycaster.setFromCamera(screenCenter, camera);
+        
+        // 2. Find the intersection with the globe mesh
+        const intersects = raycaster.intersectObjects(globeGroup.children, true);
+
+        if (intersects.length > 0) {
+            const intersectionPoint = intersects[0].point;
+            const coords = vector3ToLatLon(intersectionPoint);
+            updateHTMLLabel(coords);
+        } else {
+            updateHTMLLabel({ lat: '---', lon: '---' }); 
+        }
+    } else {
+        // Option: Show a loading message if the globe isn't ready
+        updateHTMLLabel({ lat: 'Loading...', lon: 'Loading...' }); 
     }
-  });
+    
+    // === END: LAT/LON Center Display Logic ===
 
-  renderer.render(scene, camera);
+    // 🌀 Animate dash offset (your existing code)
+    dashAnimationTime += 0.02;
+    highlightGroup.traverse(obj => {
+        if (obj.material && obj.material.dashed) {
+            obj.material.dashOffset = dashAnimationTime;
+            obj.material.needsUpdate = true;
+        }
+    });
+
+    renderer.render(scene, camera);
 }
-
 
 async function drawAllCountries(boundaryColor = 0x00ffff) {
   const resp = await fetch(TOPO_URL);
@@ -589,8 +663,7 @@ async function init() {
 
     // Create RENDERER before calling functions that use it (like createGlobeMaterial)
     renderer = new THREE.WebGLRenderer({ antialias: true }); 
-    renderer.physicallyCorrectLights = true;
-    renderer.outputEncoding = THREE.sRGBEncoding;
+    //renderer.useLegacyLights = true;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.0;
     renderer.setSize(container.clientWidth, container.clientHeight);
@@ -615,10 +688,10 @@ async function init() {
     scene.add(globeGroup);
 
     // 4. ASYNC GLOBE/TOPO LOADING
-    const mat = await createGlobeMaterial(); // Await ensures renderer is available
+    const globeMesh = await createGlobeMaterial(); // Await ensures renderer is available
     // 🔥 FIX: Define sphereGeometry locally before use
     const sphereGeometry = new THREE.SphereGeometry(RADIUS, 64, 64); 
-    globeGroup.add(new THREE.Mesh(sphereGeometry, mat));
+    globeGroup.add(new THREE.Mesh(sphereGeometry, globeMesh));
 
     
     // 5. ASYNC GLOBE/BOUNDARY LOADING

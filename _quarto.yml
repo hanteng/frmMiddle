@@ -71,7 +71,7 @@ website:
         contents:
           - text: "🏴‍☠️中道難攏"
             href: posts/poem-center-cannot-hold/index.qmd 
-      - text: "🤓專家國師（含智庫）"
+      - text: "🤓專家國師（智庫）"
         href: experts/index.qmd
         contents:
         - text: "史學瀚"
