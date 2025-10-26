@@ -81,7 +81,14 @@ website:
           href: experts/shih-victor.md 
       - text: "🪸中等強權（含分類）"
         href: bang.qmd
-      - text: "📳中等強權（可視化）"
+        contents:
+        - text: "💪中上強權⏫"
+          href: middlep/Major-Powers/index.qmd
+        - text: "💪中地強權🗺️"
+          href: middlep/Principal-Powers/index.qmd
+        - text: "💪中關強權🔑"
+          href: middlep/Critical-Middle-Powers/index.qmd
+      - text: "🫨中等強權（可視化）"
         href: bang-interactive.qmd
       - section: "🌐《攏中道五慧》"
         contents:
