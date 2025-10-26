@@ -802,7 +802,7 @@ try:
     #         'loc_en': '英文名',  
     d_compact_cols = { 'emojiflag': '旗', 'loc_zht': '中文名', 
         'type': '🗳政治體制', 'middlep':'權力區',
-        'UN_l': '◉地域涵括表', 'UN_s': '⦿地域涵括表',
+        'UN_l': '◉地域', 'UN_s': '⦿涵括表',
         'g_APEC': '🌐APEC', 'g_G20': '🌐G20', 'g_OECD': '🌐OECD',
         'ISO2': 'ISO2', 'ISO3': 'ISO3', 
     }
@@ -825,7 +825,7 @@ try:
         .to_html()
     )
     styled_tableB = (
-        df_compact[['權力區', '🗳政治體制', '旗','中文名','◉地域涵括表','⦿地域涵括表','ISO2', 'ISO3']].style
+        df_compact[['權力區', '🗳政治體制', '旗','中文名','◉地域','⦿涵括表','ISO2', 'ISO3']].style
         .set_table_attributes('class="dataframe table table-striped table-hover"') 
         .set_caption("全球中等強權表〜🗳政治體制與地域涵括表")
         .to_html()
