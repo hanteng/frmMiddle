@@ -131,8 +131,8 @@ format:
     #number-sections: true # enable right-hand TOC
     #number-depth: 4
     theme:
-      light: [flatly, styles_converge.scss]
-      dark:  [darkly, styles_converge.scss]
+      light: [flatly, styles_converge.scss,custom.scss]
+      dark:  [darkly, styles_converge.scss,custom.scss]
     respect-user-color-scheme: true
     css: 
       - styles.css

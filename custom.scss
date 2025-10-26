@@ -1,0 +1,39 @@
+/* custom.scss */
+
+/* 1. Fix for Inline Code (e.g., `code`) */
+[data-bs-theme="dark"] code {
+    /* Set text to a visible light color */
+    color: var(--bs-warning) !important; /* Use yellow/warning for better contrast/emphasis */
+    /* Set background to a slightly darker shade than the card/body */
+    background-color: #3f4449 !important; 
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* 2. Fix for Fenced Code Blocks (e.g., ```python...```) */
+[data-bs-theme="dark"] pre {
+    /* Set background to a prominent dark shade */
+    background-color: #2b303b !important;
+    /* Ensure all text within the pre block is light */
+    color: var(--bs-light) !important;
+}
+
+/* 3. Ensure Text in Pre Blocks is Visible */
+[data-bs-theme="dark"] pre code {
+    /* Code within pre blocks should inherit the light color */
+    color: var(--bs-light) !important;
+    background-color: transparent !important; /* Remove background for inner code tag */
+}
+
+/* custom.scss */
+
+/* Target the listing description text when Dark Mode is active */
+[data-bs-theme="dark"] {
+    
+    .card-text, 
+    .listing-description,
+    .listing-description p {
+        /* Use !important to override any conflicting default Bootstrap/Quarto styles */
+        color: var(--bs-light) !important; 
+    }
+}
