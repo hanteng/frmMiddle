@@ -1,5 +1,5 @@
 /* Emoji-safe font stack for cross-platform rendering */
-.emoji-text, .card-text, select, option, code {
+.emoji-text, .card-text, .data, select, option, code {
   font-family:
     "Noto Color Emoji",        /* Android, Linux */
     "Apple Color Emoji",       /* macOS, iOS */
