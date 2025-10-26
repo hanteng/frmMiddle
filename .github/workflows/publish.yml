@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: '3.12' # Use a recent stable version like 3.12 or 3.11
       - name: Install Python dependencies
-        run: pip install jupyter nbformat ipykernel
+        run: pip install jupyter nbformat ipykernel pandas IPython
         
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
