@@ -39,19 +39,19 @@ website:
     #title: "地緣智能<br/>新框架"
     left:
       # 1. 實力紮根 (MIDDLEP)
-      - text: "1️⃣🔑國力" # "1️⃣🔑國策能力"
+      - text: "1️⃣🔑<br/>國力" # "1️⃣🔑國策能力"
         file: middlep/index.qmd
       # 2. 攏中之謀 (MOU)
-      - text: "2️⃣♞縱横" # "2️⃣♞謀略縱横"
+      - text: "2️⃣♞<br/>縱横" # "2️⃣♞謀略縱横"
         file: mou/index.qmd
       # 3. 攏中之智 (AI)
-      - text: "3️⃣🦾鏈網" # "3️⃣🦾智能鏈網"
+      - text: "3️⃣🦾<br/>鏈網" # "3️⃣🦾智能鏈網"
         file: ai/index.qmd
       # 4. 攏中之和 (ALIGNMENT)
-      - text: "4️⃣🤝對齊" # "4️⃣🤝對齊和盟"
+      - text: "4️⃣🤝<br/>對齊" # "4️⃣🤝對齊和盟"
         file: alignment/index.qmd
       # 5. 攏中之道 (DAO)
-      - text: "5️⃣🗺️編策" #"5️⃣🗺️架構編策"
+      - text: "5️⃣🗺️<br/>編策" #"5️⃣🗺️架構編策"
         file: dao/index.qmd
     right:
       - href: about.qmd
@@ -124,7 +124,7 @@ format:
     #number-depth: 4
     theme:
       light: [litera, styles_converge.scss]
-      dark:  [slate, styles_converge.scss]
+      dark:  [darkly, styles_converge.scss]
     respect-user-color-scheme: true
     css: 
       - styles.css
