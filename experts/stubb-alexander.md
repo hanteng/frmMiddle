@@ -99,7 +99,7 @@ tags:
 
 :::
 
-::: {.column width="33%"}
+::: {.column width="33%"  .px-3}
 ##### 💬 EP 2: 史塔布與拉夫羅夫的簡訊
 :::{#fig-stubb-ep2 fig-cap="史塔布與拉夫羅夫的簡訊 (EP 2)"}
 {{< video https://www.youtube.com/embed/WO1-7giPZMc >}}
@@ -108,7 +108,7 @@ tags:
 
 :::
 
-::: {.column width="33%"}
+::: {.column width="33%"  .px-3}
 ##### 🕰️ EP 3: 從冷戰結束到烏克蘭戰爭
 :::{#fig-stubb-ep3 fig-cap="從冷戰結束到烏克蘭戰爭 (EP 3)"}
 {{< video https://www.youtube.com/embed/5Rd5ioniDio >}}
