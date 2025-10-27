@@ -1,6 +1,6 @@
 ---
 title: 史學瀚（Prof. Victor Shih）
-author: 編輯
+author: 智能國師小助手
 date: 2025-10-17
 image: shih-victor.jpg
 categories:
@@ -12,6 +12,7 @@ tags:
   - 中國精英政治
   - 國際組織
   - 金融
+  - 🤓國師
 ---
 ## 🤓專家簡介
 
