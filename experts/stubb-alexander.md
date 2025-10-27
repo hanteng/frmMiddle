@@ -87,15 +87,12 @@ tags:
 
 ::: {.columns}
 
-::: {.column width="33%"}
+::: {.column width="33%" .px-3}
 ##### 🌍 EP 1: 歡迎來到新世界（失）秩序
 :::{#fig-stubb-ep1 fig-cap="歡迎來到新世界（失）秩序 (EP 1)"}
 {{< video https://www.youtube.com/embed/i5SF2ol75_k >}}
 :::
-
-:::{.card-content .px-3}
 這是系列講座的創刊號，史塔布教授為其即將出版的新書奠定基礎。他概述了全球權力結構的重大轉變，並將主題分為**權力的秩序**、**平衡**和**動力**。這是理解他「基於價值的現實主義」的起點。
-:::
 
 :::
 
@@ -125,7 +122,7 @@ tags:
 
 ::: {.columns}
 
-::: {.column width="33%"}
+::: {.column width="33%" .px-3}
 ##### 💣 EP 4: 從失序到顛覆
 :::{#fig-stubb-ep4 fig-cap="從失序到顛覆 (EP 4)"}
 {{< video https://www.youtube.com/embed/142mT0UOuLs >}}
@@ -134,7 +131,7 @@ tags:
 
 :::
 
-::: {.column width="33%"}
+::: {.column width="33%" .px-3}
 ##### 🏛️ EP 5: 多邊失序
 :::{#fig-stubb-ep5 fig-cap="多邊失序 (EP 5)"}
 {{< video https://www.youtube.com/embed/SQhpWj-hFnQ >}}
@@ -143,7 +140,7 @@ tags:
 
 :::
 
-::: {.column width="33%"}
+::: {.column width="33%" .px-3}
 ##### 💥 EP 6: 四個 C：衝突
 :::{#fig-stubb-ep6 fig-cap="四個 C：衝突 (EP 6)"}
 {{< video https://www.youtube.com/embed/5xL-PIDsRBY >}}
@@ -162,7 +159,7 @@ tags:
 
 ::: {.columns}
 
-::: {.column width="33%"}
+::: {.column width="33%" .px-3}
 ##### ⚙️ EP 7: 競爭：地緣政治的引擎
 :::{#fig-stubb-ep7 fig-cap="競爭：地緣政治的引擎 (EP 7)"}
 {{< video https://www.youtube.com/embed/wsYbqKvyJ5Q >}}
@@ -171,7 +168,7 @@ tags:
 
 :::
 
-::: {.column width="33%"}
+::: {.column width="33%" .px-3}
 ##### 🤝 EP 8: 合作：人類的引擎
 :::{#fig-stubb-ep8 fig-cap="合作：人類的引擎 (EP 8)"}
 {{< video https://www.youtube.com/embed/CCQXrcAd3fQ >}}
@@ -180,7 +177,7 @@ tags:
 
 :::
 
-::: {.column width="33%"}
+::: {.column width="33%" .px-3}
 ##### 💻 EP 9: 從地緣政治到技術政治
 :::{#fig-stubb-ep9 fig-cap="從地緣政治到技術政治 (EP 9)"}
 {{< video https://www.youtube.com/embed/6bmWocql93g >}}
