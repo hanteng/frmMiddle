@@ -1,38 +1,16 @@
 /*-- scss:rules --*/
-
-/* 1. Fix for Dark Mode Text Visibility (Listing/Card Descriptions) */
-[data-bs-theme="dark"] {
-    
-    .card-text, 
-    .listing-description,
-    .listing-description p {
-        /* This fixes the text that was turning invisible */
-        color: var(--bs-light) !important; 
-    }
+/* 1. ULTIMATE FIX FOR LISTING CARD TEXT VISIBILITY (Override everything) */
+[data-bs-theme="dark"] .listing-card * {
+    /* Use !important to override everything */
+    color: var(--bs-light) !important;
 }
-
 
 /* 2. Fix for Inline Code (e.g., `code`) */
 [data-bs-theme="dark"] code {
-    /* Set text to a visible light color */
+    /* ... (The rest of your code block rules) ... */
     color: var(--bs-warning) !important; 
-    /* Set background to a slightly darker shade than the card/body */
     background-color: #3f4449 !important; 
     padding: 2px 4px;
     border-radius: 4px;
 }
-
-/* 3. Fix for Fenced Code Blocks (e.g., ```python...```) */
-[data-bs-theme="dark"] pre {
-    /* Set background to a prominent dark shade */
-    background-color: #2b303b !important;
-    /* Ensure all text within the pre block is light */
-    color: var(--bs-light) !important;
-}
-
-/* 4. Ensure Text in Pre Blocks is Visible */
-[data-bs-theme="dark"] pre code {
-    /* Code within pre blocks should inherit the light color */
-    color: var(--bs-light) !important;
-    background-color: transparent !important; /* Remove background for inner code tag */
-}
+/* ... Keep the rest of your original code block fixes (pre, pre code) below ... */
