@@ -1,5 +1,5 @@
 ---
-title: 史學瀚（Prof. Alexander Stubb）
+title: 史塔布（Prof. Alexander Stubb）
 author: 智能國師小助手
 date: 2025-10-27
 image: stubb-alexander.jpg

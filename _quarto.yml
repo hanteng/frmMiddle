@@ -79,6 +79,8 @@ website:
         contents:
         - text: "史學瀚"
           href: experts/shih-victor.md 
+        - text: "史塔布"
+          href: experts/stubb-alexander.md 
       - text: "🪸中等強權（含分類）"
         href: bang.qmd
         contents:
