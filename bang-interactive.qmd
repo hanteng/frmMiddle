@@ -100,7 +100,6 @@ const GLOBE_CONFIG = {
     ISO_MAP_URL: "https://mid.frmai.life/resources/iso_map.json",
     SAT_TEXTURE_URL: "https://mid.frmai.life/images/earth-blue-marble-maritime.png",
     //TOPO_URL: "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson",
-    //SAT_TEXTURE_URL: "https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg",
 };
 
 // Destructure values for convenience and readability
