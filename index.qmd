@@ -65,7 +65,7 @@ toc: false
 ::: {.column width="30%" .px-3}
 <!-- Layout Fig 智能國師波蘭球 -->
 :::{#fig-index-iconball fig-cap="智能國師波蘭球"}
-![](images/zhuge.gif)
+![](/images/Zhuge.gif)
 :::
 本站吉祥物迷因：智能國師波蘭球，仿諸葛孔明的漫畫風。
 
