@@ -2,10 +2,12 @@
 listing:
   contents: "." # 這表示列出當前目錄下的所有文章
   sort: "date desc"
-  type: default # 或 default, table, grid 等
+  type: grid # 或 default, table, grid 等
   categories: true
-  sort-ui: false
-  filter-ui: false
+  sort-ui: true
+  filter-ui: true
+  fields: [image, title, description, categories]
+  page-size: 10
 page-layout: full
 ---
 
