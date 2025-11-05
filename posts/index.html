@@ -84,9 +84,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -317,7 +317,7 @@ window.Quarto = {
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -393,7 +393,7 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
@@ -550,7 +550,7 @@ window.Quarto = {
 </nav>
     <h5 class="quarto-listing-category-title">分类</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">全部 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUU1JTk1JThGJUU5JUExJThDJUU2JTg0JThGJUU4JUFEJTk4">問題意識 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2">新聞評論 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="JUU2JTk2JUIwJUU4JUE5JUE5">新詩 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU2JUFEJUEzJUU1JThGJThEJUU1JTg1JUE5JUU5JTlEJUEy">正反兩面 <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -564,48 +564,55 @@ window.Quarto = {
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2" data-listing-date-sort="1761523200000" data-listing-file-modified-sort="1762148495203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
-<div class="thumbnail"><a href="../posts/20251027-APEC-enlargement/index.html" class="no-external">
-
-<img loading="lazy" src="../posts/20251027-APEC-enlargement/Asia-Pacific_Economic_Cooperation_logo.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../posts/20251027-APEC-enlargement/index.html" class="no-external">🌏🌎借鑑「芬蘭經驗」：APEC應追求「有價值的韌性」</a>
-</h3>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="排序方式" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">排序方式</option>
+      <option value="index" data-direction="asc">默认</option>
+      <option value="listing-title" data-direction="asc">
+        标题
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="筛选">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2" data-listing-date-sort="1761523200000" data-listing-file-modified-sort="1762307751168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
+<a href="../posts/20251027-APEC-enlargement/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../posts/20251027-APEC-enlargement/Asia-Pacific_Economic_Cooperation_logo.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+🌏🌎借鑑「芬蘭經驗」：APEC應追求「有價值的韌性」
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2'); return false;">新聞評論</div>
 
 </div>
-<div class="delink listing-description"><a href="../posts/20251027-APEC-enlargement/index.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>— 寫在 APEC 2025 領袖會議召開前（韓國慶州 APEC 會議）</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../posts/20251027-APEC-enlargement/index.html" class="no-external">
-<div class="listing-date">
-2025年10月27日
-</div>
-<div class="listing-author">
-智能國師（全生成）
-</div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2JTJDJUU2JUFEJUEzJUU1JThGJThEJUU1JTg1JUE5JUU5JTlEJUEy" data-listing-date-sort="1761350400000" data-listing-file-modified-sort="1762148495202" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
-<div class="thumbnail"><a href="../posts/20251025-Incorruptible-Retrocession/index.html" class="no-external">
-
-<img loading="lazy" src="../posts/20251025-Incorruptible-Retrocession/葛超智_George_H_Kerr.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../posts/20251025-Incorruptible-Retrocession/index.html" class="no-external">🛄擦亮歷史的試金石，反思誰在踐行民族大義</a>
-</h3>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2JTJDJUU2JUFEJUEzJUU1JThGJThEJUU1JTg1JUE5JUU5JTlEJUEy" data-listing-date-sort="1761350400000" data-listing-file-modified-sort="1762307751168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<a href="../posts/20251025-Incorruptible-Retrocession/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../posts/20251025-Incorruptible-Retrocession/葛超智_George_H_Kerr.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+🛄擦亮歷史的試金石，反思誰在踐行民族大義
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2'); return false;">新聞評論</div>
@@ -613,31 +620,22 @@ window.Quarto = {
 <div class="listing-category" onclick="window.quartoListingCategory('JUU2JUFEJUEzJUU1JThGJThEJUU1JTg1JUE5JUU5JTlEJUEy'); return false;">正反兩面</div>
 
 </div>
-<div class="delink listing-description"><a href="../posts/20251025-Incorruptible-Retrocession/index.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>習近平親設「台灣光復紀念日」。本文對比國民黨戰後「劫收」物資貪腐與白色恐怖，凸顯中國共產黨在人道救援與治理上的清廉與高效，證明誰是民族真正的領導者。</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../posts/20251025-Incorruptible-Retrocession/index.html" class="no-external">
-<div class="listing-date">
-2025年10月25日
-</div>
-<div class="listing-author">
-智能國師（全生成）
-</div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2JTJDJUU2JUFEJUEzJUU1JThGJThEJUU1JTg1JUE5JUU5JTlEJUEy" data-listing-date-sort="1761264000000" data-listing-file-modified-sort="1762148495202" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737">
-<div class="thumbnail"><a href="../posts/20251024-Restoring-Humanitarian/index.html" class="no-external">
-
-<img loading="lazy" src="../posts/20251024-Restoring-Humanitarian/葛超智_George_H_Kerr.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../posts/20251024-Restoring-Humanitarian/index.html" class="no-external">🛍強權的慈善陰影與「光復」的試金石</a>
-</h3>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2JTJDJUU2JUFEJUEzJUU1JThGJThEJUU1JTg1JUE5JUU5JTlEJUEy" data-listing-date-sort="1761264000000" data-listing-file-modified-sort="1762307751168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737">
+<a href="../posts/20251024-Restoring-Humanitarian/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../posts/20251024-Restoring-Humanitarian/葛超智_George_H_Kerr.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+🛍強權的慈善陰影與「光復」的試金石
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUU2JTk2JUIwJUU4JTgxJTlFJUU4JUE5JTk1JUU4JUFCJTk2'); return false;">新聞評論</div>
@@ -645,31 +643,22 @@ window.Quarto = {
 <div class="listing-category" onclick="window.quartoListingCategory('JUU2JUFEJUEzJUU1JThGJThEJUU1JTg1JUE5JUU5JTlEJUEy'); return false;">正反兩面</div>
 
 </div>
-<div class="delink listing-description"><a href="../posts/20251024-Restoring-Humanitarian/index.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>從葛超智揭露的臺灣戰後行總貪腐，對比當代中國郭美美事件。本文論述，人道救援的公正性才是衡量強權（無論美中）是否具備道德合法性的終極試金石。</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../posts/20251024-Restoring-Humanitarian/index.html" class="no-external">
-<div class="listing-date">
-2025年10月24日
-</div>
-<div class="listing-author">
-智能國師（全生成）
-</div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="JUU2JTk2JUIwJUU4JUE5JUE5JTJDJUU1JTk1JThGJUU5JUExJThDJUU2JTg0JThGJUU4JUFEJTk4" data-listing-date-sort="1760572800000" data-listing-file-modified-sort="1762148495210" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
-<div class="thumbnail"><a href="../posts/poem-center-cannot-hold/index.html" class="no-external">
-
-<img loading="lazy" src="../posts/poem-center-cannot-hold/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../posts/poem-center-cannot-hold/index.html" class="no-external">中道難攏：新詩《大聖歸來》</a>
-</h3>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="JUU2JTk2JUIwJUU4JUE5JUE5JTJDJUU1JTk1JThGJUU5JUExJThDJUU2JTg0JThGJUU4JUFEJTk4" data-listing-date-sort="1760572800000" data-listing-file-modified-sort="1762307751175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
+<a href="../posts/poem-center-cannot-hold/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../posts/poem-center-cannot-hold/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+中道難攏：新詩《大聖歸來》
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUU2JTk2JUIwJUU4JUE5JUE5'); return false;">新詩</div>
@@ -677,20 +666,11 @@ window.Quarto = {
 <div class="listing-category" onclick="window.quartoListingCategory('JUU1JTk1JThGJUU5JUExJThDJUU2JTg0JThGJUU4JUFEJTk4'); return false;">問題意識</div>
 
 </div>
-<div class="delink listing-description"><a href="../posts/poem-center-cannot-hold/index.html" class="no-external">
+<div class="card-text listing-description delink">
 「<strong>中道難攏</strong>」來自諾貝爾文學奬得主葉慈（W.B.Yeats）《<strong>二度降臨</strong>》詩句 ❝the center cannot hold❞ 。
-</a></div>
 </div>
-<div class="metadata">
-<a href="../posts/poem-center-cannot-hold/index.html" class="no-external">
-<div class="listing-date">
-2025年10月16日
 </div>
-<div class="listing-author">
-廖漢騰 Han-Teng Liao
-</div>
-</a>
-</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">无匹配项</div>
